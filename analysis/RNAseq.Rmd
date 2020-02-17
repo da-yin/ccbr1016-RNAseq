@@ -1,8 +1,10 @@
 ---
 title: "RNAseq"
 author: "Da"
-date: '`r format(Sys.time(), "%a %b %d %Y - %X")`'
-output: html_document
+date: "2/16/2020"
+output:
+  md_document:
+    variant: markdown_github
 ---
 
 RNA-seq data analysis
@@ -35,17 +37,21 @@ Analysis code is written for R version 3.6.1
 
 Summary
 --------
-Sinha and Hernandez et al. identified the general control of amino acid synthesis 1-like 1 gene (Gcn1) in an in vivo genetic screen to isolate drivers of metastatic outgrowth. Preliminary in vitro and in vivo experiments suggest that Gcn1 drives tumor growth and metastasis during glutamine deprivation by activating the master regulator of the integrated stress response pathway ATF4. 
+Sinha and Hernandez et al. identified the general control of amino acid synthesis 1-like 1 gene (Gcn1) in an in vivo genetic screen to isolate drivers of metastatic outgrowth. Preliminary in vitro and in vivo experiments suggest that Gcn1 drives tumor growth and metastasis during glutamine deprivation by activating the master regulator of the integrated stress response pathway ATF4.
 
-This dataset has 6 samples: two control sample (SCR) and four Gcn1 knockdown samples (SH1 and SH2) under 0.5 mM treatment. First the knock-down of Gcn1 is verified by importing bigwig/bam files into IGV and checking the exons of Gcn1 gene. SH1 and SH2 has lower counts on the first few exons. RSEM counts were normalized using the voom algorithm from the Limma R package (version 3.40.6). These normalized counts were used for clustering and data visualization. PCA shows SH1 knockdown samples have larger variation compared to SCR controls than SH2 compared to SCR. Heatmap generated using the top 500 most variable genes across samples visually confirmed this. 
+This dataset has 6 samples: two control sample (SCR) and four Gcn1 knockdown samples (SH1 and SH2) under 0.5 mM treatment. First the knock-down of Gcn1 is verified by importing bigwig/bam files into IGV and checking the exons of Gcn1 gene. SH1 and SH2 has lower counts on the first few exons. RSEM counts were normalized using the voom algorithm from the Limma R package (version 3.40.6). These normalized counts were used for clustering and data visualization. PCA shows SH1 knockdown samples have larger variation compared to SCR controls than SH2 compared to SCR. Heatmap generated using the top 500 most variable genes across samples visually confirmed this.
 
-The Limma package was used to test for differential gene expression between experimental conditions. Significant differentially expressed genes were identified with a false-discovery rate ≤ 0.05 and a log(fold change) > 1. The number of DEGs in SH1_0pt5mM-SCR_0pt5mM: 3300; SH2_0pt5mM-SCR_0pt5mM: 1028; SCR_4mM-SCR_0pt5mM: 244. Since SCR_4mM-SCR_0pt5mM serves as negative control, the DEGs in this contrast that overlap with two other contrasts were excluded for subsequent analysis. 
+The Limma package was used to test for differential gene expression between experimental conditions. Significant differentially expressed genes were identified with a false-discovery rate ≤ 0.05 and a log(fold change) > 1. The number of DEGs in SH1_0pt5mM-SCR_0pt5mM: 3300; SH2_0pt5mM-SCR_0pt5mM: 1028; SCR_4mM-SCR_0pt5mM: 244. Since SCR_4mM-SCR_0pt5mM serves as negative control, the DEGs in this contrast that overlap with two other contrasts were excluded for subsequent analysis.
 
 Over Representation Analysis (ORA) is used to identify biological functions or processes are over-represented (enriched) in differentially expressed genes (DEGs).Pathway enrichment was performed using pre-ranked Gene Set Enrichment Analysis (GSEA) with the KEGG and Reactome genesets from the Molecular Signatures Database.
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(fig.width=14, fig.height=9)
+knitr::opts_chunk$set(
+	fig.height = 9,
+	fig.width = 14,
+	warning = FALSE
+)
 ```
 
 ```{r load library}
@@ -89,7 +95,7 @@ DEGs_dir = "~/Desktop/active_projects/ccbr1016-RNAseq/analysis/processedData/DEG
 normalized_data_dir = "~/Desktop/active_projects/ccbr1016-RNAseq/analysis/processedData/normalized/"
 ```
 
-
+### limma voom for differential expression
 ```{r use limma voom to compute differential expression}
 limmaDEG = function(DIR,FILE1,FILE2, CONTRASTS){
   
@@ -198,7 +204,7 @@ file.remove(paste(DEGs_dir,toRemove, sep = "/"))
 
 ```
 
-
+### shortern labels for dotplots
 ```{r include=FALSE}
 #' Truncate string vector of ggplot axis label
 #'
@@ -241,7 +247,7 @@ short_label <- function(label, maxLen = 50, maxWord = 10, pattern = " ", dot = T
 }
 ```
 
-read in the matrices into a list and modify the names
+#### read in the matrices into a list and modify the names
 ```{r read data}
 rawData_dir = "~/Desktop/active_projects/ccbr1016-RNAseq/rawData/"
 geneinfo = read.table("~/Desktop/active_projects/ccbr1016-RNAseq/rawData/geneinfo.bed")
@@ -259,7 +265,7 @@ names(my_degs) <- stringr::str_replace(my_files, pattern = "_all_genes.txt", rep
 
 ```
 
-rank genes based on gsea_ranking_score, for GO gsea
+#### rank genes based on gsea_ranking_score, for GO gsea
 ```{r calculate degs; rank genes based on gsea_ranking_score, message=FALSE, warning=FALSE}
 my_sig_degs = lapply(my_degs, function(x) subset(x, fdr < 0.05 & abs(fc) > 2))
 
@@ -271,7 +277,7 @@ my_degs_rankingScoresList <- lapply(my_degs, function(x){
 
 ```
 
-Mapping DEGs to entrez IDs using ensemble, then symbol, then NCBI web scrapped IDs.  
+#### Mapping DEGs to entrez IDs using ensemble, then symbol, then NCBI web scrapped IDs.  
 ```{r Converts EnsemblIDs to UNIPROTID; rank genes based on gsea_ranking_score, message=FALSE, warning=FALSE}
 Entrez_from_webScrap <- read.table("~/Desktop/active_projects/ccbr1016-RNAseq/rawData/result_webScrap.txt", sep = '\t', stringsAsFactors = F, col.names = c("ensid_gene", "ENTREZID"))
 Entrez_from_webScrap$ensid_gene <- gsub('.*=','', Entrez_from_webScrap$ensid_gene) 
@@ -304,7 +310,7 @@ Entrez_unmapped_geneinfo<- geneinfo[(geneinfo$V5%in%Entrez_unmapped),]
 paste("Umapped genes include",sum(Entrez_unmapped_geneinfo$V6=="TEC"),"TEC,",sum(Entrez_unmapped_geneinfo$V6=="lincRNA"),"lincRNA,",sum(Entrez_unmapped_geneinfo$V6=="processed_pseudogene"), "processed_pseudogene,", sum(Entrez_unmapped_geneinfo$V6=="antisense"),"antisense,", sum(Entrez_unmapped_geneinfo$V6=="protein_coding"), "protein_coding, etc")
 ```
 
-rank genes based on gsea_ranking_score, for KEGG & Reactome gsea 
+#### rank genes based on gsea_ranking_score, for KEGG & Reactome gsea 
 ```{r ranking Entrez genes}
 my_degs_entrez = lapply(my_degs, function(x){
   result <- merge(x, Entrez_all, by="ensid_gene") #adding a entrez column
@@ -585,7 +591,7 @@ dotplot(myKEGG_gsea[[3]], showCategory=6, split=".sign") + facet_grid(.~.sign)+ 
 
 ```
 
-aminoacyl_tRNA_biosynthesis
+### aminoacyl_tRNA_biosynthesis
 ```{r fig.width=10, fig.height=9}
 normalized_data_SH1_SCR_0.5 = subset(normalized_data, select=c(gene, SCR_0pt5mM_A,SCR_0pt5mM_B,SH1_0pt5mM_A,SH1_0pt5mM_B))
 normalized_data_SH2_SCR_0.5 = subset(normalized_data, select=c(gene, SCR_0pt5mM_A,SCR_0pt5mM_B,SH2_0pt5mM_A,SH2_0pt5mM_B))
