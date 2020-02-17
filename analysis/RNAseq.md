@@ -64,7 +64,9 @@ Over Representation Analysis (ORA) is used to identify biological
 functions or processes are over-represented (enriched) in differentially
 expressed genes (DEGs).Pathway enrichment was performed using pre-ranked
 Gene Set Enrichment Analysis (GSEA) with the KEGG and Reactome genesets
-from the Molecular Signatures Database.
+from the Molecular Signatures Database. Differentially expressed genes
+that led to the perturbation of aminoacyl tRNA biosynthesis and serine
+family amino acid biosynthetic process were identified.
 
 ``` r
 suppressMessages(library(rgl))
@@ -252,8 +254,6 @@ file.remove(paste(DEGs_dir,toRemove, sep = "/"))
 
     ## [1] TRUE
 
-### shortern labels for dotplots
-
 #### read in the matrices into a list and modify the names
 
 ``` r
@@ -356,7 +356,7 @@ autoplot(pca.SH1_SH2_SCR_0.5,label=T,repel = TRUE,
          label.size = 3,label.repel=T)+ theme_light()
 ```
 
-![](RNAseq_files/figure-markdown_github/unnamed-chunk-2-1.png)
+![](RNAseq_files/figure-markdown_github/PCA-1.png)
 
 #### heatmap for Top 500 most variable genes across samples
 
@@ -372,7 +372,7 @@ heatmap.2(data.matrix(select_var_count),col=rev(morecols(50)),trace="none",
           main="Top 500 most variable genes across samples",scale="row",srtCol=20,cexCol=0.8,cexRow = 0.1)
 ```
 
-![](RNAseq_files/figure-markdown_github/unnamed-chunk-3-1.png)
+![](RNAseq_files/figure-markdown_github/heatmap%20for%20Top%20500%20most%20variable%20genes-1.png)
 
 #### volcano plot for differentially expressed genes
 
@@ -391,19 +391,19 @@ myVolcanos = lapply(my_degs, function(x){
 myVolcanos[[1]] + ggtitle(paste(names(myVolcanos[1])))
 ```
 
-![](RNAseq_files/figure-markdown_github/unnamed-chunk-4-1.png)
+![](RNAseq_files/figure-markdown_github/volcano%20plot%20DEGs-1.png)
 
 ``` r
 myVolcanos[[2]] + ggtitle(paste(names(myVolcanos[2])))
 ```
 
-![](RNAseq_files/figure-markdown_github/unnamed-chunk-4-2.png)
+![](RNAseq_files/figure-markdown_github/volcano%20plot%20DEGs-2.png)
 
 ``` r
 myVolcanos[[3]] + ggtitle(paste(names(myVolcanos[3])))
 ```
 
-![](RNAseq_files/figure-markdown_github/unnamed-chunk-4-3.png)
+![](RNAseq_files/figure-markdown_github/volcano%20plot%20DEGs-3.png)
 
 #### number of differentially expressed genes for each contrast
 
@@ -427,7 +427,7 @@ venn.plot_3Con0.5 <- venn.diagram(list(my_sig_degs[[1]]$gene,
 grid.draw(venn.plot_3Con0.5)
 ```
 
-<img src="RNAseq_files/figure-markdown_github/unnamed-chunk-7-1.png" style="display: block; margin: auto;" />
+<img src="RNAseq_files/figure-markdown_github/Venn overlap-1.png" style="display: block; margin: auto;" />
 
 #### exlude the DEGs in SCR\_4mM-SCR\_0pt5mM from other contrasts
 
@@ -551,6 +551,8 @@ dotplot(myBP_gsea[[3]], showCategory=6, split=".sign") + facet_grid(.~.sign)+ gg
 
 ![](RNAseq_files/figure-markdown_github/gsea%20biological%20process-3.png)
 
+#### serine family amino acid biosynthetic process
+
 ``` r
 normalized_data_SH1_SCR_0.5 = subset(normalized_data, select=c(gene, SCR_0pt5mM_A,SCR_0pt5mM_B,SH1_0pt5mM_A,SH1_0pt5mM_B))
 
@@ -558,11 +560,7 @@ serine1 = myBP_gsea[["SH1_0pt5mM-SCR_0pt5mM"]][which(myBP_gsea[["SH1_0pt5mM-SCR_
 serine1$core_enrichment = strsplit(as.character(serine1$core_enrichment), '\\/') 
 
 SH1_SCR_0.5_serine_symbol = bitr(serine1$core_enrichment[[1]], fromType = "ENSEMBL", toType = "SYMBOL", OrgDb = org.Mm.eg.db) 
-```
 
-    ## 'select()' returned 1:1 mapping between keys and columns
-
-``` r
 normalized_data_SH1_SCR_0.5_serine = normalized_data_SH1_SCR_0.5[(normalized_data_SH1_SCR_0.5$gene%in%
                                           SH1_SCR_0.5_serine_symbol$SYMBOL),]
 
@@ -578,7 +576,7 @@ drawheatmap = function(df, mytitle){
 SH1heatmap = drawheatmap(normalized_data_SH1_SCR_0.5_serine, "serine family amino acid biosynthetic process SH1_0pt5mM-SCR_0pt5mM")
 ```
 
-![](RNAseq_files/figure-markdown_github/unnamed-chunk-13-1.png)
+![](RNAseq_files/figure-markdown_github/serine%20family%20amino%20acid%20biosynthetic%20process-1.png)
 
 ``` r
 #Running score and preranked list are traditional methods for visualizing GSEA result.
@@ -586,7 +584,7 @@ SH1gseaplot_BP = gseaplot2(myBP_gsea[["SH1_0pt5mM-SCR_0pt5mM"]], geneSetID = "GO
 SH1gseaplot_BP
 ```
 
-![](RNAseq_files/figure-markdown_github/unnamed-chunk-13-2.png)
+![](RNAseq_files/figure-markdown_github/serine%20family%20amino%20acid%20biosynthetic%20process-2.png)
 
 #### kegg gsea
 
@@ -625,17 +623,9 @@ aminoacyl_tRNA_biosynthesis2$core_enrichment = strsplit(as.character(aminoacyl_t
 # aminoacyl_tRNA_biosynthesis = union(aminoacyl_tRNA_biosynthesis1$core_enrichment[[1]],aminoacyl_tRNA_biosynthesis2$core_enrichment[[1]])
 
 SH1_SCR_0.5_aminoacyl_tRNA_biosynthesis_symbol = bitr(aminoacyl_tRNA_biosynthesis1$core_enrichment[[1]], fromType = "ENTREZID", toType = "SYMBOL", OrgDb = org.Mm.eg.db) 
-```
 
-    ## 'select()' returned 1:1 mapping between keys and columns
-
-``` r
 SH2_SCR_0.5_aminoacyl_tRNA_biosynthesis_symbol = bitr(aminoacyl_tRNA_biosynthesis2$core_enrichment[[1]], fromType = "ENTREZID", toType = "SYMBOL", OrgDb = org.Mm.eg.db) 
-```
 
-    ## 'select()' returned 1:1 mapping between keys and columns
-
-``` r
 normalized_data_SH1_SCR_0.5_aminoacyl_tRNA_biosynthesis = normalized_data_SH1_SCR_0.5[(normalized_data_SH1_SCR_0.5$gene%in%
                                           SH1_SCR_0.5_aminoacyl_tRNA_biosynthesis_symbol$SYMBOL),]
 normalized_data_SH2_SCR_0.5_aminoacyl_tRNA_biosynthesis = normalized_data_SH2_SCR_0.5[(normalized_data_SH2_SCR_0.5$gene%in%
@@ -657,25 +647,25 @@ SH2gseaplot = gseaplot2(myKEGG_gsea[["SH2_0pt5mM-SCR_0pt5mM"]], geneSetID = "mmu
 SH1heatmap = drawheatmap(normalized_data_SH1_SCR_0.5_aminoacyl_tRNA_biosynthesis, "Aminoacyl-tRNA biosynthesis SH1_0pt5mM-SCR_0pt5mM")
 ```
 
-![](RNAseq_files/figure-markdown_github/unnamed-chunk-15-1.png)
+![](RNAseq_files/figure-markdown_github/aminoacyl_tRNA_biosynthesis-1.png)
 
 ``` r
 SH1gseaplot
 ```
 
-![](RNAseq_files/figure-markdown_github/unnamed-chunk-15-2.png)
+![](RNAseq_files/figure-markdown_github/aminoacyl_tRNA_biosynthesis-2.png)
 
 ``` r
 SH2heatmap = drawheatmap(normalized_data_SH2_SCR_0.5_aminoacyl_tRNA_biosynthesis, "Aminoacyl-tRNA biosynthesis SH2_0pt5mM-SCR_0pt5mM")
 ```
 
-![](RNAseq_files/figure-markdown_github/unnamed-chunk-15-3.png)
+![](RNAseq_files/figure-markdown_github/aminoacyl_tRNA_biosynthesis-3.png)
 
 ``` r
 SH2gseaplot
 ```
 
-![](RNAseq_files/figure-markdown_github/unnamed-chunk-15-4.png)
+![](RNAseq_files/figure-markdown_github/aminoacyl_tRNA_biosynthesis-4.png)
 
 ``` r
 save.image(file = "RNAseq.RData")

@@ -43,13 +43,14 @@ This dataset has 6 samples: two control sample (SCR) and four Gcn1 knockdown sam
 
 The Limma package was used to test for differential gene expression between experimental conditions. Significant differentially expressed genes were identified with a false-discovery rate ≤ 0.05 and a log(fold change) > 1. The number of DEGs in SH1_0pt5mM-SCR_0pt5mM: 3300; SH2_0pt5mM-SCR_0pt5mM: 1028; SCR_4mM-SCR_0pt5mM: 244. Since SCR_4mM-SCR_0pt5mM serves as negative control, the DEGs in this contrast that overlap with two other contrasts were excluded for subsequent analysis.
 
-Over Representation Analysis (ORA) is used to identify biological functions or processes are over-represented (enriched) in differentially expressed genes (DEGs).Pathway enrichment was performed using pre-ranked Gene Set Enrichment Analysis (GSEA) with the KEGG and Reactome genesets from the Molecular Signatures Database.
+Over Representation Analysis (ORA) is used to identify biological functions or processes are over-represented (enriched) in differentially expressed genes (DEGs).Pathway enrichment was performed using pre-ranked Gene Set Enrichment Analysis (GSEA) with the KEGG and Reactome genesets from the Molecular Signatures Database. Differentially expressed genes that led to the perturbation of aminoacyl tRNA biosynthesis and serine family amino acid biosynthetic process were identified.
 
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
 	fig.height = 9,
 	fig.width = 14,
+	message = FALSE,
 	warning = FALSE
 )
 ```
@@ -204,8 +205,7 @@ file.remove(paste(DEGs_dir,toRemove, sep = "/"))
 
 ```
 
-### shortern labels for dotplots
-```{r include=FALSE}
+```{r shortern labels for dotplots, include=FALSE}
 #' Truncate string vector of ggplot axis label
 #'
 #' @param label    a ordered string vector
@@ -326,7 +326,7 @@ my_degs_entrez_rankingScoresList <- lapply(my_degs_entrez, function(x){
 ```
 
 #### PCA
-```{r fig.width=8, fig.height=7}
+```{r PCA, fig.width=8, fig.height=7}
 normalized_data_dir = "~/Desktop/active_projects/ccbr1016-RNAseq/analysis/processedData/normalized/"
 normalizedData = list.files(normalized_data_dir, pattern = "control")
 normalized_data = read.table(paste(normalized_data_dir, normalizedData, sep = "/"), header = T, sep = '\t', row.names = 1)
@@ -342,7 +342,7 @@ autoplot(pca.SH1_SH2_SCR_0.5,label=T,repel = TRUE,
 ```
 
 #### heatmap for Top 500 most variable genes across samples
-```{r}
+```{r heatmap for Top 500 most variable genes}
 var_genes  = apply(SH1_SH2_SCR_0.5, 1, var)
 select_var <- names(sort(var_genes, decreasing=TRUE))[1:500]
 select_var_count = SH1_SH2_SCR_0.5[select_var,]
@@ -355,7 +355,7 @@ heatmap.2(data.matrix(select_var_count),col=rev(morecols(50)),trace="none",
 ```
 
 #### volcano plot for differentially expressed genes
-```{r}
+```{r volcano plot DEGs}
 myVolcanos = lapply(my_degs, function(x){
   EnhancedVolcano(x, 
                 lab = x$gene,x = "log2fc", y = "fdr", ylab = bquote(~-Log[10]~FDR),FCcutoff = 1, 
@@ -392,7 +392,7 @@ paste("Number of DEGS in",names(my_sig_degs[3]), ":", length(my_sig_degs[[3]]$ge
 ```
 
 #### Three 0.5mM contrasts
-```{r fig.align='center', fig.height=6, fig.width=12}
+```{r Venn overlap, fig.align='center', fig.height=6, fig.width=12}
 venn.plot_3Con0.5 <- venn.diagram(list(my_sig_degs[[1]]$gene,
                                      my_sig_degs[[2]]$gene,
                                      my_sig_degs[[3]]$gene), NULL, 
@@ -534,7 +534,8 @@ dotplot(myBP_gsea[[2]], showCategory=6, split=".sign") + facet_grid(.~.sign)+ gg
 dotplot(myBP_gsea[[3]], showCategory=6, split=".sign") + facet_grid(.~.sign)+ ggtitle(paste(names(myBP_gsea[3]),"Gene set enrichment analysis", sep = " ")) + scale_y_discrete(label=short_label)
 ```
 
-```{r fig.width=9, fig.height=8}
+#### serine family amino acid biosynthetic process
+```{r serine family amino acid biosynthetic process, fig.width=9, fig.height=8}
 normalized_data_SH1_SCR_0.5 = subset(normalized_data, select=c(gene, SCR_0pt5mM_A,SCR_0pt5mM_B,SH1_0pt5mM_A,SH1_0pt5mM_B))
 
 serine1 = myBP_gsea[["SH1_0pt5mM-SCR_0pt5mM"]][which(myBP_gsea[["SH1_0pt5mM-SCR_0pt5mM"]]$ID=="GO:0009070"),]
@@ -592,7 +593,7 @@ dotplot(myKEGG_gsea[[3]], showCategory=6, split=".sign") + facet_grid(.~.sign)+ 
 ```
 
 ### aminoacyl_tRNA_biosynthesis
-```{r fig.width=10, fig.height=9}
+```{r aminoacyl_tRNA_biosynthesis, fig.width=10, fig.height=9}
 normalized_data_SH1_SCR_0.5 = subset(normalized_data, select=c(gene, SCR_0pt5mM_A,SCR_0pt5mM_B,SH1_0pt5mM_A,SH1_0pt5mM_B))
 normalized_data_SH2_SCR_0.5 = subset(normalized_data, select=c(gene, SCR_0pt5mM_A,SCR_0pt5mM_B,SH2_0pt5mM_A,SH2_0pt5mM_B))
 aminoacyl_tRNA_biosynthesis1 = myKEGG_gsea[["SH1_0pt5mM-SCR_0pt5mM"]][which(myKEGG_gsea[["SH1_0pt5mM-SCR_0pt5mM"]]$ID=="mmu00970"),]
