@@ -1,0 +1,5 @@
+sampleName	fileName	condition	label
+Gcn1_SCR_0pt5mM_A	Gcn1_SCR_0pt5mM_A	SCR_0pt5mM	SCR_0pt5mM_A
+Gcn1_SCR_0pt5mM_B	Gcn1_SCR_0pt5mM_B	SCR_0pt5mM	SCR_0pt5mM_B
+Gcn1_SCR_4mM_A	Gcn1_SCR_4mM_A	SCR_4mM	SCR_4mM_A
+Gcn1_SCR_4mM_B	Gcn1_SCR_4mM_B	SCR_4mM	SCR_4mM_B
