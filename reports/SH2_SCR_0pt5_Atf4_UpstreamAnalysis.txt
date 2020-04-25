@@ -1,0 +1,746 @@
+© 2000-2020 QIAGEN. All rights reserved.
+
+Upstream Regulator	Expr Log Ratio	Molecule Type	Predicted Activation State	Activation z-score	p-value of overlap	Target Molecules in Dataset	Mechanistic Network
+nelfinavir	 	chemical drug	Inhibited	-3.376	1.17E-13	ADM2,ALDH1L2,ANGPTL6,ATF4,CHAC1,CTH,DDR2,GPT2,MAATS1,PSPH,SLC6A9,TRIB3	 
+ATF4	-1.383	transcription regulator	Inhibited	-2.628	1.48E-13	AREG,ATF4,BCAT1,CHAC1,CTH,DDR2,GDF15,IHH,PSPH,PYCR1,SLC6A9,SLC7A3,SLC7A5,SNAI2,TRIB3	15 (2)
+EIF2S1	-0.152	translation regulator	Inhibited	-2.781	1.56E-09	ADM2,ALDH1L2,ANGPTL6,ATF4,CHAC1,MAATS1,SLC6A9,TRIB3	 
+diethylstilbestrol	 	chemical drug	 	-0.266	1.24E-08	ADM2,AQP9,AREG,BCAT1,GABRP,GJB2,IGFBP3,KRT13,PADI4,PAMR1,PIGR,SOCS2,Sprr2a1/Sprr2a2,WNT4	44 (6)
+UCP1	 	transporter	 	-1.897	1.03E-07	ATF4,CTH,GDF15,OTUB2,PSPH,PYCR1,REEP6,SERPINE1,SLC6A9,TRIB3	 
+beta-estradiol	 	chemical - endogenous mammalian	 	1.143	1.72E-07	ACSM3,ADM2,AGT,AREG,BCAT1,CLCA1,CPM,DIO1,GABRP,GJB2,GPT2,GSTP1,HAS2,IGFBP3,KRT13,LGR5,LHFPL2,MMP3,OTUB2,PADI4,PAMR1,PIGR,PODN,PPP1R1B,PYCR1,SERPINE1,SLC6A9,SLC7A5,SNAI2,SOCS2,SOX11,Sprr2a1/Sprr2a2,TFPI,WNT4	61 (11)
+ALDH2	-0.064	enzyme	Activated	2.219	3.02E-07	ATF4,CTH,PSPH,SLC7A3,SLC7A5	 
+1,4-bis[2-(3,5-dichloropyridyloxy)]benzene	 	chemical toxicant	 	0.597	9.71E-07	CCN4,Ces2a,CYP2C9,DIO1,GSTP1,HMGCS2,STEAP4,Sult1d1	13 (3)
+Growth hormone	 	group	 	-0.520	2.49E-06	AGT,CDH3,CTH,CYP2C9,GDF15,GSTP1,IGFBP3,Pzp,SLCO1A2,SOCS2	56 (17)
+mifepristone	 	chemical drug	 	1.380	2.95E-06	AREG,BCAT1,CKMT1A/CKMT1B,HAS2,IGFBP3,MMP3,SERPINE1,SOX11,Sprr2a1/Sprr2a2,Sult1d1,TFPI	52 (17)
+HDL-cholesterol	 	complex	Activated	2.236	3.64E-06	ALDH1L2,CHAC1,DDR2,GPT2,TRIB3	 
+CTNNB1	-0.081	transcription regulator	 	0.074	4.48E-06	CCN4,Cd52,Csn1s1,DIO1,GJB2,GPX2,HMGCS2,IHH,LECT2,LGR5,MMP3,MPZL2,NOX1,SERPINE1,SERPINE2,SNAI2,SOX11,WNT4	45 (11)
+histidinol	 	chemical - endogenous mammalian	 	 	5.01E-06	ATF4,GPT2,SLC7A5	 
+NR1I3	 	ligand-dependent nuclear receptor	 	1.266	6.42E-06	CCN4,Ces2a,CYP2C9,DIO1,GSTP1,STEAP4,Sult1d1	12 (2)
+ADAM12	 	peptidase	 	1.454	8.50E-06	GDF15,IGFBP3,MMP3,Nepn,SERPINE1,SERPINE2	50 (11)
+IFNG	 	cytokine	 	-1.472	1.35E-05	AGT,AQP9,AREG,ATF4,CHAC1,CKMT1A/CKMT1B,CYP2C9,DDR2,DIO1,GDF15,GJB2,GSTP1,Gvin1 (includes others),HAS2,IL15RA,IL19,MMP3,NOX1,PIGR,PPP1R1B,SERPINE1,SLC7A5,SNAI2,SOCS2	56 (16)
+HNF1A	0.050	transcription regulator	Activated	2.607	1.44E-05	AGT,ALDOB,AQP9,CCDC198,CYP2C9,GPX2,IHH,MELTF,PAMR1,PIGR,SERPINE1,Sult1d1,TMPRSS4	31 (7)
+PPARGC1A	0.521	transcription regulator	 	0.791	1.80E-05	AGT,CCN4,CYP2C9,DIO1,GDF15,HMGCS2,IGFBP3,PODN,SEMA3G,SERPINE2,TRIB3	 
+TRIB3	-1.901	kinase	Activated	2.000	2.49E-05	CTH,GDF15,PSPH,TRIB3	15 (3)
+cigarette smoke	 	chemical toxicant	 	-1.969	4.04E-05	AREG,ATF4,GPX2,GSTP1,MMP3,PGF,SERPINE1,SLC6A9,SOCS2	43 (10)
+PPP1R15B	-0.130	phosphatase	 	 	4.04E-05	ATF4,CHAC1,TRIB3	 
+PPARA	 	ligand-dependent nuclear receptor	 	0.667	4.21E-05	ALDOB,AQP9,CTH,Cyp2c40 (includes others),CYP2C9,DIO1,GSTP1,HMGCS2,IGFBP3,LECT2,RBP2,SOCS2	 
+lipopolysaccharide	 	chemical drug	 	-0.203	4.34E-05	AGT,AREG,ATF4,CCN4,Cd52,CTH,CYP2C9,FYB1,GJB2,GSTP1,HMGCS2,IGFBP3,IL15RA,IL19,KRT13,MELTF,MMP3,NOX1,PIGR,PLD4,SEMA3G,SERPINE1,SERPINE2,SOCS2,Sprr2a1/Sprr2a2,STEAP4,TFPI,TRIB3	54 (15)
+NOX4	 	enzyme	 	 	6.35E-05	AGT,CTH,HAS2,SERPINE1	 
+levothyroxine	 	chemical - endogenous mammalian	 	0.447	6.92E-05	CYP2C9,DIO1,GDF15,IGFBP3,SLC7A3	 
+laquinimod	 	chemical drug	 	-0.128	7.53E-05	GPT2,MPZL2,PGF,PPP1R14D,SERPINB8,WNT4	 
+FGF2	 	growth factor	Inhibited	-3.043	8.43E-05	AREG,ATF4,CCN4,HAS2,IGFBP3,MMP3,PGF,SERPINE1,SNAI2,TFPI,WNT4	53 (18)
+clopidogrel	 	chemical drug	Inhibited	-2.177	8.54E-05	ALDH1L2,CHAC1,CTH,GPT2,TRIB3	 
+NR1I2	 	ligand-dependent nuclear receptor	 	0.943	8.62E-05	Ces2a,CTH,CYP2C9,GSTP1,HMGCS2,SLCO1A2,Sult1d1	 
+bucladesine	 	chemical toxicant	 	-0.633	9.45E-05	CYP2C9,DIO1,GDF15,GSTP1,HAS2,IGFBP3,NOX1,PADI4,SERPINE1,WNT4	48 (12)
+TRAF3IP2	0.067	other	 	0.314	1.04E-04	AGT,CDH3,IL19,MMP3,STEAP4	47 (12)
+HNF1B	0.081	transcription regulator	 	1.067	1.11E-04	ALDOB,IGFBP3,IHH,MPZL2,SNAI2,Sult1d1	 
+TNF	0.277	cytokine	 	-0.332	1.18E-04	AGT,AQP9,ATF4,CCN4,CDH3,CHST4,DIO1,FAT2,GDF15,GSTP1,HAS2,IGFBP3,IL15RA,IL19,LGR5,MMP3,NOX1,PIGR,PIK3CD,Ppbp,SERPINB8,SERPINE1,SERPINE2,SOCS2,STEAP4,TFPI	46 (12)
+ESR2	 	ligand-dependent nuclear receptor	 	 	1.23E-04	AGT,BCAT1,CPM,GSTP1,IGFBP3,MMP3,OTUB2,PYCR1,SERPINE1,SNAI2,SOCS2,SOX11	57 (14)
+cholesterol	 	chemical - endogenous mammalian	 	-0.788	1.40E-04	AGT,AQP9,AREG,ATF4,Ces2a,IHH,SLC28A3,SLC7A5	 
+dexamethasone	 	chemical drug	 	1.610	1.56E-04	ADGRG3,AGT,ALDOB,AREG,ATF4,C4bp,CD177,CYP2C9,DIO1,GDF15,GPR141,GSTP1,IGFBP3,IHH,MELTF,MGAM,MMP3,PIK3CD,PLD4,Ppbp,PPP1R14D,RBP2,SERPINE1,SERPINE2,SNAI2,SOCS2,Sult1d1,TMPRSS4	59 (16)
+paclitaxel	 	chemical drug	 	0.000	1.58E-04	AREG,ATF4,CYP2C9,GDF15,IGFBP3,IHH,SNAI2,TFPI,WNT4	52 (14)
+ERK1/2	 	group	 	-1.767	1.61E-04	AREG,CCN4,HAS2,IGFBP3,IL19,MMP3,NOX1,SERPINE1,SNAI2	63 (17)
+ESR1	0.295	ligand-dependent nuclear receptor	 	-0.156	1.72E-04	AGT,AQP9,AREG,BCAT1,CPM,CYP4A22,GDF15,GJB2,HMGCS2,IGFBP3,KRT13,OTUB2,PADI4,PYCR1,SCAND1,SERPINE1,SLC7A5,SNAI2,SOCS2,TRIB3,WNT4	57 (18)
+NKX2-1	 	transcription regulator	 	 	1.77E-04	AGT,AREG,FAM3D,SERPINE1,SNAI2,Sprr2a1/Sprr2a2,WNT4	 
+gentamicin	 	chemical drug	 	-1.238	1.81E-04	2610528A11Rik,ACSM3,CYP2C9,DIO1,GDF15,GJB2,IGFBP3,Pzp	 
+EREG	-0.825	growth factor	 	 	1.93E-04	AREG,HAS2,PGF	 
+CDH1	-0.169	other	 	0.492	2.03E-04	CDH3,IGFBP3,KRT13,MMP3,SNAI2	48 (16)
+TFRC	0.156	transporter	 	1.342	2.14E-04	ATF4,CHAC1,PLD4,SERPINB8,SOX11	 
+homocysteine	 	chemical - endogenous mammalian	 	0.080	2.26E-04	ADM2,ATF4,PGF,SNAI2,TRIB3	 
+TGFB1	-0.049	growth factor	Inhibited	-2.070	2.33E-04	ACSM3,ALDOB,AQP9,AREG,ATF4,CCN4,DDR2,GDF15,GJB2,GRHL1,HAS2,IGFBP3,MAPK13,MELTF,MMP3,PIK3CD,PPP1R14D,PPP1R1B,PSPH,SERPINE1,SERPINE2,SLC7A5,SNAI2,TFPI,WNT4	59 (19)
+SBDS	-0.009	other	 	 	2.52E-04	CHAC1,CTH,LGR5,SNAI2,TRIB3	7 (2)
+FOS	-0.090	transcription regulator	 	-0.973	2.60E-04	AGT,CTH,GSTP1,HAS2,KRT13,MMP3,MPZL2,S100a7a,SERPINE1,SERPINE2,SNAI2,WNT4	48 (10)
+dextran sulfate	 	chemical drug	 	-0.218	2.93E-04	AGT,CD177,MMP3,NLRP6,NOX1,PGF,PIGR,SERPINE1	36 (12)
+EHF	0.093	transcription regulator	 	-1.342	3.43E-04	CDH3,FOXN1,MMP3,SERPINE1,TFPI	 
+NCOA1	0.237	transcription regulator	 	-0.314	3.80E-04	CYP2C9,DIO1,GJB2,HAS2,LECT2,SERPINE1	 
+carbonyl cyanide m-chlorophenyl hydrazone	 	chemical toxicant	 	-1.000	3.92E-04	AGT,ATF4,GDF15,SERPINE1	22 (5)
+norethindrone acetate	 	chemical drug	 	 	3.99E-04	SERPINE1,TFPI	 
+MAP3K3	-0.122	kinase	 	 	4.66E-04	HAS2,SNAI2,STEAP4	 
+aldosterone	 	chemical - endogenous mammalian	 	-0.009	4.70E-04	AGT,HAS2,NOX1,PGF,PIK3CD,SERPINE1	46 (15)
+17-alpha-ethinylestradiol	 	chemical drug	 	0.000	4.86E-04	AQP9,ATF4,BCAT1,GDF15,Sprr2a1/Sprr2a2,WNT4	40 (6)
+10E,12Z-octadecadienoic acid	 	chemical - endogenous mammalian	 	-1.387	5.56E-04	ACSM3,ATF4,GDF15,IGFBP3,PODN,TRIB3	 
+INHA	 	growth factor	Activated	2.219	5.70E-04	AREG,CCN4,HAS2,PIK3CD,SERPINE1	 
+BICC1	0.174	other	 	 	5.96E-04	AREG,PIGR	 
+AMER1	-0.059	other	 	 	5.96E-04	AREG,LGR5	 
+GJA8	 	transporter	 	 	5.96E-04	ATF4,TRIB3	 
+NET1	0.173	other	 	 	5.96E-04	SERPINE1,SNAI2	28 (7)
+glucocorticoid	 	chemical drug	 	0.184	6.41E-04	AGT,GABRP,HAS2,IGFBP3,KCNJ11,MMP3,PIGR,SERPINE1	49 (17)
+progesterone	 	chemical - endogenous mammalian	 	-0.773	6.53E-04	AREG,BCAT1,CKMT1A/CKMT1B,CLCA1,GJB2,IGFBP3,IHH,LGR5,MMP3,PIGR,PPP1R1B,WNT4	19 (3)
+TWIST1	0.271	transcription regulator	 	-1.032	6.76E-04	CCN4,DDR2,FCGBP,PAMR1,SLC28A3,SNAI2	 
+SPARC	-0.798	other	 	-1.400	6.76E-04	CDH3,CIART,SERPINE1,SNAI2,SYDE2	30 (5)
+USF2	0.161	transcription regulator	 	 	7.06E-04	AGT,IGFBP3,PIGR,SERPINE1	 
+SMARCA4	0.020	transcription regulator	 	-0.577	7.30E-04	AGT,AREG,CPM,GSTP1,IL15RA,MAPK13,MELTF,SERPINB8,SERPINE1,SERPINE2,SLAMF9,SOCS2	 
+bisindolylmaleimide I	 	chemical - kinase inhibitor	 	0.156	7.34E-04	AGT,GDF15,HAS2,KCNJ11,SERPINE1	50 (15)
+REN	 	peptidase	 	 	7.41E-04	AGT,CYP2C9,NOX1	24 (6)
+troglitazone	 	chemical drug	 	-0.269	7.48E-04	AGT,ANGPTL6,CYP2C9,GDF15,KRT13,MMP3,SERPINE1,TMPRSS4,TRIB3	50 (15)
+CHADL	-0.267	other	 	 	8.23E-04	IGFBP3,IHH,STEAP4	 
+GNE	-0.317	kinase	 	 	8.31E-04	CHAC1,TRIB3	 
+thenoyltrifluoroacetone	 	chemical reagent	 	 	8.31E-04	AGT,SERPINE1	41 (9)
+OSM	 	cytokine	 	-1.402	8.45E-04	AQP9,CDH3,CPM,IGFBP3,IL15RA,MMP3,MPZL2,PGF,PIGR,SERPINB8,SERPINE1	18 (4)
+arsenite	 	chemical toxicant	 	 	8.96E-04	ATF4,GSTP1,HAS2,SERPINE1,SNAI2	51 (16)
+tosedostat	 	chemical drug	 	 	9.10E-04	CHAC1,CTH,TRIB3	 
+PIK3CA	-0.089	kinase	 	 	9.42E-04	IL19,PIK3CD,SERPINE1,SNAI2	35 (10)
+Insulin	 	group	 	0.051	9.49E-04	AGT,ALDOB,AQP9,CTH,CYP2C9,GSTP1,IGFBP3,MMP3,SERPINE1,WNT4	47 (11)
+oleic acid	 	chemical - endogenous mammalian	 	-1.000	9.67E-04	AQP9,ATF4,GDF15,IGFBP3,SERPINE1	44 (12)
+entinostat	 	chemical drug	 	-1.067	9.95E-04	IGFBP3,LGR5,MMP3,SERPINE1	49 (12)
+HRAS	-0.073	enzyme	 	-1.129	1.02E-03	AREG,CALCRL,CDH3,GJB2,HAS2,MMP3,MUC13,PGF,SERPINE1,SERPINE2,SNAI2,SOCS2	52 (18)
+EIF2AK4	0.159	kinase	 	 	1.10E-03	ATF4,CHAC1,PSPH	 
+UDP	 	chemical - endogenous mammalian	 	 	1.10E-03	HAS2,SERPINE1	31 (7)
+fingolimod phosphate	 	chemical - endogenous mammalian	 	 	1.10E-03	HAS2,SERPINE1	 
+Retinoic acid-RAR-RXR	 	complex	 	 	1.10E-03	IGFBP3,RBP2	 
+ponesimod	 	chemical drug	 	 	1.10E-03	HAS2,SERPINE1	 
+levofloxacin	 	chemical drug	 	 	1.10E-03	HAS2,MMP3	 
+HLX	0.007	transcription regulator	 	 	1.21E-03	AREG,GDF15,SEMA3G	 
+heparin	 	chemical - endogenous mammalian	 	-0.068	1.23E-03	AREG,HAS2,IGFBP3,TFPI	46 (14)
+E. coli serotype 0127B8 lipopolysaccharide	 	chemical - endogenous non-mammalian	 	-0.816	1.26E-03	AQP9,GJB2,HAS2,MMP3,PPP1R1B,SLC7A5	37 (6)
+EGR1	-0.497	transcription regulator	Inhibited	-2.170	1.33E-03	AREG,GDF15,Ppbp,SERPINE1,SNAI2,WNT4	54 (13)
+EGFR	0.047	kinase	 	-1.620	1.34E-03	AREG,HAS2,IGFBP3,MMP3,NOX1,SERPINE1,SERPINE2,SNAI2,WNT4	62 (17)
+FOSL1	-0.614	transcription regulator	 	-1.686	1.36E-03	MMP3,SERPINE1,SERPINE2,SNAI2	45 (10)
+SCUBE3	 	other	 	 	1.41E-03	SERPINE1,SNAI2	 
+LONP1	-0.538	peptidase	Activated	2.000	1.50E-03	ALDH1L2,ATF4,CHAC1,GPT2	 
+TLR3	0.331	transmembrane receptor	 	-0.218	1.56E-03	CLCA1,CPM,Csn1s1,CTH,IL19,PIK3CD,SERPINE1	 
+Vegf	 	group	 	-0.350	1.57E-03	CALCRL,GJB2,HMGCS2,IGFBP3,IHH,IL15RA,PGF,PPP1R1B,SOCS2,Sult1d1	36 (5)
+hydrogen peroxide	 	chemical - endogenous mammalian	 	-0.402	1.68E-03	AGT,GDF15,HMGCS2,MMP3,NOX1,PGF,SERPINE1,SNAI2,TRIB3,WNT4	54 (16)
+RAS	 	group	 	 	1.70E-03	GSTP1,NOX1,SERPINE1,SERPINE2,SNAI2	52 (18)
+ANKRD17	-0.031	other	 	 	1.76E-03	ARID5A,U90926	 
+NMNAT1	0.094	enzyme	 	 	1.76E-03	SOCS2,TFPI	 
+premarin	 	chemical drug	 	 	1.76E-03	AREG,SERPINE1	31 (7)
+USF1	0.001	transcription regulator	 	 	1.81E-03	AGT,IGFBP3,PIGR,SERPINE1	 
+TGFA	-0.074	growth factor	 	-1.087	1.81E-03	AREG,GJB2,GSTP1,SERPINE1	41 (7)
+NR2F1	0.255	ligand-dependent nuclear receptor	 	 	1.96E-03	AGT,GDF15,RBP2	 
+memantine	 	chemical drug	 	 	1.96E-03	CYP2C9,CYP4A22,GSTP1	 
+fulvestrant	 	chemical drug	 	-0.115	2.00E-03	AREG,ATF4,GJB2,GSTP1,SLC7A5,SNAI2,WNT4	51 (15)
+deferoxamine	 	chemical drug	 	-0.640	2.01E-03	GDF15,IGFBP3,PLD4,SERPINB8,SERPINE1,SERPINE2	 
+RELA	0.146	transcription regulator	 	-0.468	2.03E-03	AGT,CYP2C9,GDF15,HAS2,IL15RA,LGR5,MMP3,NOX1,SERPINE2	51 (11)
+phenobarbital	 	chemical drug	 	0.952	2.06E-03	Ces2a,CYP2C9,DIO1,GSTP1	15 (4)
+LY294002	 	chemical - kinase inhibitor	 	-0.485	2.08E-03	ACSM3,ATF4,GDF15,GSTP1,HAS2,IGFBP3,IL19,SERPINE1,SLCO1A2,SOCS2	50 (13)
+DACH1	 	transcription regulator	 	 	2.11E-03	IGFBP3,MMP3,SERPINE1	9 (3)
+L-serine	 	chemical - endogenous mammalian	 	 	2.14E-03	ATF4,PSPH	 
+MTF1	-0.006	transcription regulator	 	 	2.14E-03	MMP3,PGF	 
+PDE3B	0.344	enzyme	 	 	2.14E-03	SERPINE1,TRIB3	 
+FOXD1	-0.081	transcription regulator	 	 	2.14E-03	PGF,SERPINE1	 
+ACE	0.536	peptidase	 	 	2.14E-03	AGT,SERPINE1	29 (10)
+ELK3	0.094	transcription regulator	 	 	2.14E-03	MMP3,SERPINE1	34 (7)
+Ncoa6	-0.124	transcription regulator	 	 	2.14E-03	AREG,SERPINE1	 
+PIK3R1	0.160	kinase	 	0.000	2.25E-03	ATF4,PIK3CD,SERPINE1,TRIB3	32 (8)
+U0126	 	chemical - kinase inhibitor	Activated	2.130	2.26E-03	AGT,AREG,ATF4,CCN4,GDF15,IHH,MMP3,NOX1,SERPINE1,SNAI2	53 (18)
+Pka	 	complex	 	-0.447	2.26E-03	AREG,HAS2,MMP3,NOX1,PPP1R1B	49 (16)
+LGR4	0.277	transmembrane receptor	 	 	2.27E-03	AQP9,LECT2,WNT4	 
+AGTR1	 	G-protein coupled receptor	 	 	2.27E-03	AGT,GSTP1,SERPINE1	32 (10)
+H-7	 	chemical - kinase inhibitor	 	 	2.27E-03	AREG,MMP3,SERPINE1	34 (10)
+tunicamycin	 	chemical - endogenous non-mammalian	 	-1.484	2.38E-03	ATF4,CHAC1,GPT2,IHH,MMP3,PADI4	 
+TP53	0.013	transcription regulator	Inhibited	-2.301	2.50E-03	AREG,ATF4,BCAT1,CALCRL,CDH3,CKMT1A/CKMT1B,FAT2,GDF15,GPR160,GSTP1,HAS2,IGFBP3,LGR5,MMP3,MPZL2,PADI4,PIK3CD,SERPINE1,SERPINE2,SLC7A5,SNAI2,SOCS2,TRIB3	57 (14)
+NCOA3	0.087	transcription regulator	 	 	2.55E-03	GJB2,IGFBP3,LECT2,OTUB2	 
+STAT1/3/5 dimer	 	complex	 	 	2.56E-03	MMP3,SOCS2	 
+VGLL3	 	other	 	 	2.56E-03	MMP3,SNAI2	 
+trientine	 	chemical drug	 	 	2.56E-03	IGFBP3,SERPINE1	 
+tamoxifen	 	chemical drug	 	-0.314	2.59E-03	AQP9,ATF4,GDF15,GJB2,HAS2,IGFBP3,SLC7A5	57 (15)
+2-methoxyestradiol	 	chemical - endogenous mammalian	 	 	2.60E-03	AREG,Csn1s1,SERPINE2	 
+ARHGAP21	-0.003	other	 	 	2.60E-03	ARID5A,IL15RA,U90926	 
+Jnk	 	group	 	-0.796	2.67E-03	AGT,GDF15,IL19,MMP3,SERPINE1,SNAI2	54 (15)
+6-hydroxydopamine	 	chemical toxicant	 	-1.176	2.76E-03	ATF4,MMP3,NOX1,TRIB3	22 (5)
+TCF	 	group	 	 	2.76E-03	GPX2,IHH,LGR5,SERPINE1	22 (3)
+NFkB (complex)	 	complex	 	-1.006	2.78E-03	AGT,DIO1,GDF15,HAS2,IL15RA,IL19,MMP3,SERPINE1,SLC7A5,SNAI2,TRIB3	49 (15)
+NAMPT	-0.290	cytokine	 	 	2.78E-03	MMP3,SOCS2,TFPI	 
+THRB	0.028	ligand-dependent nuclear receptor	 	0.242	2.92E-03	CCN4,DIO1,FOXN1,IGFBP3,SERPINE1,WNT4	 
+FOXA2	0.096	transcription regulator	 	1.732	2.92E-03	ALDOB,CLCA1,CPM,CYP2C9,HMGCS2,KCNJ11	 
+ZMPSTE24	-0.148	peptidase	 	 	2.97E-03	DIO1,IGFBP3,SOCS2	38 (7)
+erlotinib	 	chemical drug	 	-1.715	2.99E-03	AREG,MMP3,NOX1,SERPINE1	50 (12)
+IL1B	 	cytokine	 	-1.125	3.03E-03	ATF4,CYP2C9,DIO1,GDF15,HAS2,IGFBP3,IL15RA,IL19,MMP3,NOX1,PIGR,Ppbp,SERPINE1,SOCS2	47 (13)
+EPAS1	0.072	transcription regulator	 	 	3.13E-03	AREG,CKMT1A/CKMT1B,IGFBP3,PGF,SERPINE1,SLC7A5	45 (12)
+SP600125	 	chemical - kinase inhibitor	 	1.912	3.19E-03	CHAC1,CPM,MMP3,NOX1,PIK3CD,SERPINE1,TRIB3	46 (12)
+AGT	1.176	growth factor	 	0.018	3.21E-03	AGT,CYP2C9,GSTP1,HAS2,IGFBP3,NOX1,PGF,SERPINE1,TFPI	45 (16)
+TAF4	-0.119	transcription regulator	 	1.067	3.23E-03	AREG,CDH3,GJB2,MMP3	 
+5-azacytidine	 	chemical drug	 	-0.600	3.38E-03	GDF15,GSTP1,SERPINB8,SLC7A5,SOX11	 
+TP63	 	transcription regulator	 	-0.791	3.44E-03	AREG,CDH3,GPX2,IGFBP3,IHH,MPZL2,SERPINE1,SNAI2,WNT4	48 (15)
+GATA2	 	transcription regulator	 	 	3.46E-03	AQP9,CD177,Cyp2c40 (includes others),GABRP,GPR141,KRT13,Ppbp,SLC18A1	 
+ethanol	 	chemical - endogenous mammalian	 	-1.061	3.46E-03	ATF4,CYP2C9,CYP4A22,DDR2,MMP3,PPP1R1B,SERPINE1,TRIB3	42 (10)
+Hnf3	 	group	 	 	3.50E-03	ALDOB,CYP2C9	 
+GABBR1	0.046	G-protein coupled receptor	 	 	3.50E-03	ATF4,IHH	 
+ACE2	 	peptidase	 	 	3.50E-03	AGT,SERPINE1	24 (6)
+clasto-lactacystin beta-lactone	 	chemical - protease inhibitor	 	 	3.50E-03	ATF4,GSTP1	 
+carbonyl cyanide p-(trifluoromethoxy)phenylhydrazone	 	chemical reagent	 	 	3.50E-03	CHAC1,PSPH	 
+mannose	 	chemical - endogenous mammalian	 	 	3.50E-03	ATF4,HAS2	 
+PD98059	 	chemical - kinase inhibitor	 	1.765	3.51E-03	AGT,AREG,ATF4,CDH3,HAS2,IGFBP3,MMP3,SERPINE1,SNAI2,SOCS2	52 (19)
+JUN	0.439	transcription regulator	 	-1.313	3.54E-03	CHST4,GSTP1,IGFBP3,LGR5,MMP3,PADI4,SERPINE1,SNAI2,WNT4	48 (14)
+MED1	0.006	transcription regulator	 	-0.762	3.57E-03	DIO1,GSTP1,HAS2,IGFBP3,OTUB2	32 (6)
+BSG	-0.121	transporter	 	 	3.78E-03	ALDOB,MMP3,SERPINE1	51 (9)
+Ap1	 	complex	 	 	3.87E-03	GSTP1,IGFBP3,MMP3,PADI4,SERPINE1	33 (5)
+CEBPD	0.457	transcription regulator	 	 	3.88E-03	AGT,MMP3,NOX1,SNAI2	 
+TNFAIP2	-0.052	other	 	 	4.02E-03	IL15RA,U90926	 
+SLC2A1	-0.347	transporter	 	 	4.02E-03	ALDH1L2,SERPINE1	 
+TGFBR3	 	kinase	 	 	4.02E-03	SERPINE1,SNAI2	42 (8)
+TOPBP1	-0.082	other	 	 	4.02E-03	IGFBP3,MMP3	 
+Mn(III)-tetrakis-(4-benzoic acid) porphyrin	 	chemical reagent	 	 	4.02E-03	AGT,SERPINE1	34 (11)
+Ins1	 	other	 	-1.787	4.02E-03	AGT,GSTP1,IGFBP3,MELTF,MMP3,SERPINE1,SOCS2	39 (10)
+tetradecanoylphorbol acetate	 	chemical drug	 	-1.896	4.02E-03	AGT,AREG,DIO1,FCGBP,GABRP,GDF15,GSTP1,HAS2,IGFBP3,MMP3,NOX1,RBP2,S100a7a,SERPINE1,SLC28A3,SNAI2	61 (17)
+dihydrotestosterone	 	chemical - endogenous mammalian	 	-0.959	4.22E-03	AGT,AREG,CYP4A22,GSTP1,IGFBP3,MMP3,SERPINE2,SNAI2,TFPI,WNT4	69 (15)
+IGFBP2	 	other	 	 	4.23E-03	GDF15,IGFBP3,LGR5	 
+ARNTL	0.041	transcription regulator	 	 	4.23E-03	HMGCS2,IHH,RBP2	 
+9,10-dimethyl-1,2-benzanthracene	 	chemical toxicant	 	 	4.23E-03	AREG,SERPINE1,SNAI2	39 (14)
+TO-901317	 	chemical reagent	 	 	4.29E-03	C4bp,Ces2a,DIO1,GSTP1,HMGCS2,Sult1d1	 
+actinomycin D	 	biologic drug	 	1.095	4.47E-03	AGT,ATF4,GSTP1,MMP3,RBP2,SERPINE1	54 (17)
+enalapril	 	biologic drug	 	 	4.47E-03	AGT,GPX2,SERPINE1	 
+SMAD4	0.051	transcription regulator	 	-1.556	4.56E-03	AREG,CDH3,HAS2,IHH,SERPINE1,SNAI2	32 (7)
+bevacizumab	 	biologic drug	 	 	4.57E-03	PGF,SNAI2	 
+mir-194	 	microRNA	 	 	4.57E-03	SLC7A5,SOCS2	 
+S100A9	0.027	other	 	-1.067	4.62E-03	AREG,CDH3,CPM,GJB2,MMP3	 
+bromodeoxyuridine	 	chemical drug	 	 	4.72E-03	GSTP1,IGFBP3,SERPINE1	32 (7)
+ATF3	-0.633	transcription regulator	 	 	4.77E-03	ATF4,CHAC1,MMP3,SERPINE1	37 (6)
+Creb	 	group	 	-1.709	4.85E-03	AREG,BCL2L15,CCN4,CTH,HAS2,P2RX3,PYCR1	 
+norepinephrine	 	chemical - endogenous mammalian	 	-1.406	4.86E-03	GDF15,P2RX3,PADI4,PIGR,SERPINE1	 
+Mapk	 	group	 	 	4.93E-03	MMP3,NOX1,PIGR,SNAI2	45 (15)
+Esrra	0.107	transcription regulator	 	1.091	4.93E-03	AGT,ALDOB,IHH,PPP1R1B	 
+ERK	 	group	Inhibited	-2.213	5.04E-03	AGT,AREG,GDF15,MMP3,SERPINE1,SNAI2	52 (16)
+CD24	 	other	 	 	5.10E-03	CHAC1,GDF15,PHF10,TFPI	 
+Smad2/3-Smad4	 	complex	 	 	5.16E-03	IGFBP3,SERPINE1	 
+FKBP4	0.073	enzyme	 	 	5.16E-03	IHH,IL15RA	 
+P2RY2	0.196	G-protein coupled receptor	 	 	5.16E-03	HAS2,SERPINE1	31 (7)
+ITGB6	-0.393	other	 	 	5.16E-03	MMP3,SERPINE1	31 (7)
+actinonin	 	chemical reagent	 	 	5.16E-03	CHAC1,PSPH	 
+PDGF BB	 	complex	 	-1.011	5.35E-03	AREG,CTH,GDF15,MMP3,SERPINE1,SLCO1A2,TRIB3	54 (17)
+plicamycin	 	chemical drug	 	1.067	5.44E-03	GJB2,PPP1R1B,SERPINE1,SERPINE2	20 (3)
+LEPR	0.106	transmembrane receptor	 	 	5.48E-03	FYB1,IGFBP3,MMP3,SERPINE1,SOCS2	43 (17)
+CAT	0.169	enzyme	 	 	5.51E-03	AGT,CLCA1,SERPINE1	44 (11)
+MYB	 	transcription regulator	 	-0.618	5.61E-03	IGFBP3,MMP3,Ppbp,SNAI2,SOCS2	 
+OGA	-0.032	enzyme	 	-1.890	5.70E-03	CADPS,CALCRL,GPT2,IGFBP3,PLD4,SERPINE2,SLAMF9,SOCS2	 
+GLIS2	0.128	transcription regulator	 	 	5.78E-03	SERPINE1,SNAI2	 
+PARG	-0.215	enzyme	 	 	5.78E-03	GDF15,SOCS2	 
+helenalin	 	chemical - endogenous non-mammalian	 	 	5.78E-03	ATF4,IL19	 
+glucosamine	 	chemical - endogenous mammalian	 	 	5.79E-03	AGT,HAS2,MMP3	51 (18)
+S100A8	-0.828	other	 	-1.067	6.02E-03	AREG,CDH3,CPM,GJB2,MMP3	 
+BRCA1	0.165	transcription regulator	 	0.157	6.02E-03	AREG,CDH3,GDF15,SERPINE2,SNAI2	34 (7)
+TRPS1	-0.193	transcription regulator	 	 	6.07E-03	GPR141,SERPINE1,SNAI2	 
+mir-24	 	microRNA	 	 	6.07E-03	SERPINE1,SNAI2,TRIB3	 
+TGFB3	0.309	growth factor	 	-1.958	6.17E-03	MMP3,SERPINE1,SERPINE2,SNAI2	44 (16)
+1810019D21Rik	-0.083	other	 	 	6.37E-03	AREG,Ppbp,SNAI2	 
+9-hydroxy-(S)-10,12-octadecadienoic acid	 	chemical - endogenous mammalian	 	 	6.38E-03	SERPINE1	 
+Has	 	group	 	 	6.38E-03	CCN4	 
+Ggt	 	group	 	 	6.38E-03	SLC7A5	 
+eIF2B	 	complex	 	 	6.38E-03	ATF4	 
+SHIP	 	group	 	 	6.38E-03	Klra2	 
+HAS2-AS1	 	other	 	 	6.38E-03	HAS2	 
+WTIP	0.203	transcription regulator	 	 	6.38E-03	AREG	 
+FSIP1	 	other	 	 	6.38E-03	SNAI2	 
+LINC00261	 	other	 	 	6.38E-03	SNAI2	 
+OPCML	 	other	 	 	6.38E-03	SNAI2	 
+ADTRP	 	enzyme	 	 	6.38E-03	TFPI	 
+TBX18	 	transcription regulator	 	 	6.38E-03	SNAI2	 
+GSE1	0.026	other	 	 	6.38E-03	SLC7A5	 
+HDAC class I inhibitors	 	chemical drug	 	 	6.38E-03	SNAI2	 
+GPX6	 	enzyme	 	 	6.38E-03	PPP1R1B	 
+Pp1c	 	group	 	 	6.38E-03	RBP2	 
+black cohosh extract	 	chemical drug	 	 	6.38E-03	SERPINE1	 
+EIF3I	0.058	translation regulator	 	 	6.38E-03	SERPINE1	 
+PRCC	0.003	other	 	 	6.38E-03	SERPINE1	 
+DYNLRB1	0.217	other	 	 	6.38E-03	SERPINE1	 
+EAF1	-0.294	transcription regulator	 	 	6.38E-03	WNT4	 
+PSMA1	-0.114	peptidase	 	 	6.38E-03	GSTP1	 
+TLL1	 	peptidase	 	 	6.38E-03	IGFBP3	 
+PDGF-Rβ dimer	 	complex	 	 	6.38E-03	SNAI2	 
+NOXA1	0.126	other	 	 	6.38E-03	NOX1	 
+CORO2A	0.136	other	 	 	6.38E-03	DIO1	 
+RPN2	0.080	enzyme	 	 	6.38E-03	GSTP1	 
+GDF10	 	growth factor	 	 	6.38E-03	SERPINE1	 
+alpha-cyano-4-hydroxycinnamate	 	chemical reagent	 	 	6.38E-03	AGT	 
+remikiren	 	chemical drug	 	 	6.38E-03	AGT	 
+tetrabenazine	 	chemical drug	 	 	6.38E-03	PPP1R1B	 
+sodium 2-((6Z,15Z)-20-hydroxyicosa-6,15-dienamido)acetate	 	chemical reagent	 	 	6.38E-03	AGT	 
+LINC02599	 	other	 	 	6.38E-03	SNAI2	 
+STAT3 inhibitor IX	 	chemical reagent	 	 	6.38E-03	HAS2	 
+chymostatin	 	chemical - protease inhibitor	 	 	6.38E-03	AGT	 
+carbon	 	chemical reagent	 	 	6.38E-03	GSTP1	 
+LDL	 	complex	 	-1.295	6.44E-03	CYP2C9,HAS2,IGFBP3,MMP3,NOX1,SERPINE1	46 (16)
+Rp-cAMPS	 	chemical - kinase inhibitor	 	 	6.44E-03	CYP2C9,MMP3	24 (7)
+CBX7	0.124	other	 	 	6.44E-03	AREG,GDF15	 
+CDK5R1	 	kinase	 	 	6.44E-03	PPP1R1B,SERPINE1	 
+ACTN4	0.020	transcription regulator	 	 	6.44E-03	MMP3,SERPINE1	33 (5)
+15-deoxy-delta-12,14 -PGJ 2	 	chemical - endogenous mammalian	Inhibited	-2.228	6.59E-03	GDF15,GSTP1,MMP3,NOX1,SERPINE1	50 (17)
+diphenyleneiodonium	 	chemical reagent	 	 	6.67E-03	AGT,NOX1,SERPINE1	56 (16)
+ursolic acid	 	chemical drug	 	 	6.67E-03	GDF15,MMP3,SLC6A9	43 (11)
+thyroid hormone	 	chemical - endogenous mammalian	 	 	6.74E-03	AGT,ALDOB,ATF4,IGFBP3,SERPINE2	 
+GH1	 	growth factor	 	 	6.75E-03	ATF4,CYP2C9,IGFBP3,SOCS2	21 (4)
+DDIT3	-0.663	transcription regulator	 	0.152	6.75E-03	ATF4,DDR2,SNAI2,TRIB3	 
+cholecalciferol	 	chemical - endogenous mammalian	 	-1.131	6.95E-03	IGFBP3,PLD4,SERPINB8,SERPINE1	31 (6)
+NFE2L2	-0.150	transcription regulator	 	0.134	6.99E-03	AGT,ATF4,CYP4A22,GPX2,GSTP1,SERPINE1,SLC6A9,SNAI2	 
+GDF15	-1.540	growth factor	 	 	7.12E-03	GDF15,SERPINE1	 
+HOXD3	 	transcription regulator	 	 	7.12E-03	IGFBP3,SERPINE1	 
+1-methyl-4-phenylpyridinium	 	chemical toxicant	 	 	7.12E-03	ATF4,TRIB3	 
+NRIP1	0.024	transcription regulator	 	 	7.31E-03	AREG,HAS2,OTUB2	 
+CSHL1	 	growth factor	 	 	7.31E-03	Csn1s1,CYP2C9,SOCS2	10 (3)
+PDX1	0.210	transcription regulator	 	-1.206	7.36E-03	ALDOB,ATF4,CKMT1A/CKMT1B,IGFBP3,TRIB3	 
+KLF4	-0.122	transcription regulator	 	1.588	7.69E-03	GJB2,KRT13,LGR5,SERPINE1,SNAI2,Sprr2a1/Sprr2a2	24 (4)
+CAR ligand-CAR-Retinoic acid-RXRα	 	complex	 	 	7.84E-03	CYP2C9,SLCO1A2	 
+LGR5	1.233	transmembrane receptor	 	 	7.84E-03	AQP9,LECT2	 
+MED12	0.205	transcription regulator	 	 	7.84E-03	GDF15,TFPI	 
+SIM2	-0.229	transcription regulator	 	 	7.84E-03	MMP3,SNAI2	 
+FBN1	 	other	 	 	7.84E-03	MMP3,SERPINE1	39 (7)
+IDO1	 	enzyme	 	 	7.84E-03	SLC6A9,SLC7A5	 
+SCX	0.337	transcription regulator	 	 	7.84E-03	MMP3,SNAI2	 
+fluconazole	 	chemical drug	 	 	7.84E-03	Cyp2c40 (includes others),CYP2C9	 
+BAY K8644	 	chemical reagent	 	 	7.84E-03	CYP2C9,KCNJ11	 
+PRKCA	-0.003	kinase	 	 	8.03E-03	GDF15,IGFBP3,MMP3,SERPINE1	46 (17)
+TSC1	0.209	other	 	 	8.32E-03	GPX2,LECT2,LGR5	 
+25-hydroxycholesterol	 	chemical reagent	 	 	8.32E-03	ATF4,CHAC1,TRIB3	 
+CEBPA	0.450	transcription regulator	 	-0.972	8.48E-03	AGT,ATF4,CYP2C9,GSTP1,HAS2,IGFBP3,SERPINE1,STEAP4	 
+FGF1	0.446	growth factor	 	 	8.49E-03	CCN4,GSTP1,HAS2,SNAI2	51 (16)
+PLA2G6	0.266	enzyme	 	 	8.59E-03	ATF4,NOX1	 
+HSP90AB1	0.053	enzyme	 	 	8.59E-03	KCNJ11,SNAI2	 
+EGLN1	-0.255	enzyme	 	 	8.68E-03	AREG,MMP3,Ppbp	 
+CG	 	complex	 	-1.252	9.08E-03	AREG,BCAT1,FAM3D,GJB2,HAS2,IGFBP3,WNT4	64 (17)
+TGFBR2	-0.038	kinase	 	0.085	9.27E-03	ATF4,GJB2,IHH,MMP3,SERPINE1	55 (14)
+PDGF-DD	 	complex	 	 	9.37E-03	PGF,UNC5C	 
+NADPH oxidase	 	complex	 	 	9.37E-03	NOX1,SERPINE1	44 (12)
+FAM3B	 	cytokine	 	 	9.37E-03	CCN4,IGFBP3	 
+BMP15	 	growth factor	 	 	9.37E-03	AREG,HAS2	 
+silibinin	 	chemical drug	 	 	9.42E-03	IGFBP3,MMP3,SNAI2	50 (17)
+Raf	 	group	 	 	9.80E-03	AREG,GDF15,HAS2	42 (8)
+DOCK8	-0.091	other	 	 	9.80E-03	ARID5A,IL15RA,U90926	 
+FANCC	0.288	other	 	 	9.80E-03	AQP9,GDF15,IGFBP3	 
+MYRF	0.110	transcription regulator	 	 	9.80E-03	Apela,AQP9,GDF15	 
+ITGB3	-0.036	transmembrane receptor	 	 	9.80E-03	HAS2,SERPINE1,SNAI2	46 (15)
+KDM1A	-0.078	enzyme	 	1.000	9.84E-03	AGT,DDR2,LGR5,SERPINE1,SOCS2	 
+WNT1	 	cytokine	 	-1.991	9.97E-03	CCN4,MMP3,SERPINE1,SERPINE2	43 (11)
+FGFR2	 	kinase	 	 	9.97E-03	CCN4,GPT2,IHH,LGR5	 
+wortmannin	 	chemical - kinase inhibitor	 	0.555	1.00E-02	AGT,GSTP1,HAS2,SERPINE1,SOCS2	 
+daporinad	 	chemical drug	 	 	1.02E-02	SERPINE1,SOX11	 
+CLDN6	-0.387	other	 	 	1.02E-02	ATF4,Sprr2a1/Sprr2a2	 
+UBE3A	-0.209	enzyme	 	 	1.02E-02	SERPINE1,WNT4	 
+FOXC1	-0.065	transcription regulator	 	 	1.02E-02	SERPINE1,SNAI2	 
+Mt2	-0.374	other	 	 	1.02E-02	GSTP1,SERPINE1	 
+ERBB2	0.351	kinase	 	-1.019	1.02E-02	AREG,ATF4,CDH3,HAS2,IGFBP3,MAPK13,MMP3,PIK3CD,SERPINE1,SNAI2,SOCS2	 
+SB203580	 	chemical - kinase inhibitor	 	1.273	1.03E-02	AGT,AQP9,FYB1,GSTP1,HAS2,IGFBP3,MMP3,SERPINE1	 
+WNT3A	 	cytokine	 	-0.155	1.04E-02	ADM2,CCN4,CTH,HAS2,LGR5,TRIB3	 
+SASH1	0.274	other	 	 	1.06E-02	ARID5A,IL15RA,U90926	 
+MAP2K3	0.155	kinase	 	 	1.06E-02	GSTP1,MMP3,SERPINE1	 
+estrogen	 	chemical drug	 	-0.896	1.07E-02	AGT,AREG,GJB2,IHH,SERPINE2,Sprr2a1/Sprr2a2	 
+dibutyl phthalate	 	chemical toxicant	 	 	1.10E-02	CYP2C9,SERPINE1	 
+mir-124	 	microRNA	 	 	1.10E-02	KCNJ11,SNAI2	 
+Saa3	0.027	other	 	 	1.10E-02	MMP3,WNT4	 
+BMP4	-0.359	growth factor	 	-1.091	1.11E-02	FOXN1,GABRP,MMP3,PGF,SNAI2	 
+BMP2	0.633	growth factor	 	1.387	1.11E-02	Gkn3,HAS2,IHH,MELTF,WNT4	 
+tetrachlorodibenzodioxin	 	chemical toxicant	 	-1.225	1.12E-02	ATF4,BCAT1,Cd52,SERPINE1,SOCS2,Sprr2a1/Sprr2a2,STEAP4	 
+IL6	0.076	cytokine	 	-0.996	1.18E-02	AGT,AREG,CYP2C9,DIO1,IGFBP3,MMP3,PGF,SERPINE1,SOCS2,STEAP4,WNT4	 
+RNF31	-0.085	enzyme	 	 	1.19E-02	AREG,IL15RA,IL19	 
+INHBB	 	growth factor	 	 	1.19E-02	MMP3,SERPINE1	 
+methyl-beta-cyclodextrin	 	chemical drug	 	 	1.19E-02	HAS2,SERPINE1	 
+ERN1	-0.112	kinase	 	 	1.25E-02	ATF4,LGR5,MPZL2,PADI4	 
+SP3	-0.072	transcription regulator	 	 	1.26E-02	GDF15,HAS2,IGFBP3,PADI4,SERPINE1	 
+12 lipoxygenase	 	group	 	 	1.27E-02	NOX1	 
+IL17RC	0.388	transmembrane receptor	 	 	1.27E-02	STEAP4	 
+L3MBTL1	 	other	 	 	1.27E-02	MMP3	 
+PHOSPHO1	-0.325	enzyme	 	 	1.27E-02	PSPH	 
+LEFTY2	 	growth factor	 	 	1.27E-02	MMP3	 
+HLTF	-0.084	transcription regulator	 	 	1.27E-02	SERPINE1	 
+CALU	-0.265	other	 	 	1.27E-02	GDF15	 
+PRSS2	 	peptidase	 	 	1.27E-02	MMP3	 
+BAZ1A	-0.046	other	 	 	1.27E-02	IGFBP3	 
+NOXO1	0.638	other	 	 	1.27E-02	NOX1	 
+Hnrpfl	 	other	 	 	1.27E-02	AGT	 
+ING2	-0.086	transcription regulator	 	 	1.27E-02	SERPINE1	 
+IMPACT	-0.018	other	 	 	1.27E-02	ATF4	 
+capmatinib	 	chemical drug	 	 	1.27E-02	AREG	 
+COL11A1	 	other	 	 	1.27E-02	DDR2	 
+nitrosonifedipine	 	chemical reagent	 	 	1.27E-02	AGT	 
+CRTAP	0.133	other	 	 	1.27E-02	SERPINE1	 
+RNF11	-0.232	enzyme	 	 	1.27E-02	SERPINE1	 
+ZFYVE16	-0.015	other	 	 	1.27E-02	SERPINE1	 
+iCRT5	 	chemical reagent	 	 	1.27E-02	CCN4	 
+iCRT3	 	chemical reagent	 	 	1.27E-02	CCN4	 
+buformin	 	chemical drug	 	 	1.27E-02	ATF4	 
+sarpogrelate	 	chemical drug	 	 	1.27E-02	SERPINE1	 
+methiothepin	 	chemical drug	 	 	1.27E-02	SERPINE1	 
+sibutramine	 	chemical drug	 	 	1.27E-02	SERPINE1	 
+imidapril	 	chemical drug	 	 	1.27E-02	AGT	 
+(S)-2-((6Z,15Z)-20- hydroxyicosa-6,15-dienamido)succinate	 	chemical reagent	 	 	1.27E-02	AGT	 
+cation	 	chemical - other	 	 	1.27E-02	GSTP1	 
+lanreotide	 	biologic drug	 	 	1.27E-02	IGFBP3	 
+indolo(3,2-b)carbazole	 	chemical reagent	 	 	1.27E-02	SOCS2	 
+tibolone	 	chemical drug	 	 	1.27E-02	SERPINE1	 
+ZNF217	0.048	transcription regulator	 	 	1.27E-02	IGFBP3,MPZL2,SOCS2	 
+nifedipine	 	chemical drug	 	 	1.27E-02	AGT,CYP2C9,KCNJ11	 
+IGF1	 	growth factor	 	0.696	1.27E-02	IGFBP3,IHH,MMP3,NOX1,PPP1R1B,SERPINE1,SNAI2,WNT4	 
+UTP	 	chemical - endogenous mammalian	 	 	1.28E-02	HAS2,SERPINE1	 
+MAC	 	complex	 	 	1.28E-02	AREG,MMP3	 
+BGN	-0.231	other	 	 	1.28E-02	CCN4,SERPINE1	 
+NPR1	-0.240	enzyme	 	 	1.28E-02	AGT,KCNJ11	 
+PLK4	-0.204	kinase	 	 	1.28E-02	IL15RA,MMP3	 
+dinoprost	 	chemical - endogenous mammalian	 	 	1.32E-02	GSTP1,HMGCS2,NOX1	 
+GNA12	0.062	enzyme	 	 	1.32E-02	DDR2,GSTP1,PIK3CD	 
+phytohemagglutinin	 	chemical drug	 	0.000	1.35E-02	AGT,CPM,IL15RA,KRT13,PGF,TFPI	 
+NCF1	 	enzyme	 	 	1.37E-02	HAS2,SERPINE1	 
+collagen type i (family)	 	group	 	 	1.37E-02	CLRN3,SERPINE1	 
+ELOVL5	-0.184	enzyme	 	 	1.37E-02	HMGCS2,TRIB3	 
+SFN	0.185	other	 	 	1.37E-02	PPP1R1B,SNAI2	 
+PPARG	-0.198	ligand-dependent nuclear receptor	 	0.317	1.39E-02	AGT,GDF15,HMGCS2,IGFBP3,IHH,MUC13,SERPINE1,TRIB3	 
+NR3C1	-0.321	ligand-dependent nuclear receptor	 	0.832	1.40E-02	AGT,CYP2C9,GSTP1,HMGCS2,IL15RA,PIGR,PIK3CD,SERPINE1,SNAI2,TRIB3	 
+ACOX1	0.011	enzyme	 	1.000	1.40E-02	C4bp,DIO1,GSTP1,TRIB3	 
+MAP3K7	 	kinase	 	 	1.41E-02	IL19,MMP3,SERPINE1	 
+tretinoin	 	chemical - endogenous mammalian	 	-0.336	1.45E-02	AGT,AQP9,AREG,ATF4,CYP2C9,GDF15,GPX2,GSTP1,HAS2,HMGCS2,IGFBP3,MMP3,PADI4,PPP1R1B,RBP2,SERPINB8,SERPINE1,SERPINE2	 
+ciglitazone	 	chemical drug	 	 	1.46E-02	AGT,NOX1,SERPINE1	 
+R5020	 	chemical reagent	 	 	1.46E-02	AREG,PPP1R1B,RBP2	 
+Mt1	-0.291	other	 	 	1.47E-02	GSTP1,SERPINE1	 
+HOXA7	 	transcription regulator	 	 	1.47E-02	CALCRL,P2RX3	 
+oltipraz	 	chemical drug	 	 	1.47E-02	AGT,GSTP1	 
+PD 123319	 	chemical drug	 	 	1.47E-02	NOX1,SERPINE1	 
+methylnitronitrosoguanidine	 	chemical toxicant	 	 	1.47E-02	GDF15,SERPINE1	 
+chrysotile asbestos	 	chemical toxicant	 	 	1.47E-02	CLCA1,MMP3	 
+HNRNPA2B1	-0.082	other	 	 	1.47E-02	GDF15,MUC13,SNAI2,WNT4	 
+STAT3	0.145	transcription regulator	 	-0.557	1.48E-02	AGT,AREG,HAS2,IHH,MMP3,NOX1,SERPINE1,SERPINE2,SNAI2	 
+Histone h4	 	group	 	 	1.50E-02	AGT,DIO1,GSTP1,HAS2	 
+RBPJ	-0.257	transcription regulator	 	 	1.50E-02	FOXN1,HAS2,MMP3,PGF	 
+IL10RA	 	transmembrane receptor	 	0.816	1.51E-02	ACSM3,ALDOB,CTH,Cyp2c40 (includes others),IL15RA,TINAG	 
+genistein	 	chemical drug	 	-0.072	1.54E-02	ATF4,DIO1,GDF15,GJB2,MMP3,NOX1,SERPINE1	 
+ARRB1	0.209	other	 	 	1.56E-02	MMP3,SERPINE1	 
+CDK5	0.014	kinase	 	 	1.56E-02	IGFBP3,PPP1R1B	 
+TP73	 	transcription regulator	 	-0.688	1.57E-02	CTH,IGFBP3,MPZL2,SERPINE1,SERPINE2,SNAI2,WNT4	 
+SNCA	 	enzyme	 	-1.706	1.58E-02	AGT,KCNJ11,MEGF11,MMP3,SERPINE1,TRIB3	 
+Mek	 	group	 	 	1.59E-02	DDR2,GDF15,HAS2,NOX1,SERPINE1	 
+prostaglandin E2	 	chemical - endogenous mammalian	Inhibited	-2.142	1.65E-02	AREG,HAS2,IL15RA,MMP3,PGF,SOCS2	 
+FBXO32	0.442	enzyme	 	 	1.66E-02	CKMT1A/CKMT1B,MMP3,PYCR1	 
+3,4,5,3',4'-pentachlorobiphenyl	 	chemical toxicant	 	 	1.66E-02	GSTP1,IGFBP3,SOCS2	 
+Hmgn3	0.255	other	 	 	1.67E-02	KCNJ11,TRIB3	 
+butylated hydroxyanisol	 	chemical toxicant	 	 	1.67E-02	GSTP1,NOX1	 
+SNAI1	 	transcription regulator	 	-1.067	1.71E-02	GDF15,SERPINE1,SLC28A3,SNAI2	 
+histamine	 	chemical - endogenous mammalian	 	 	1.72E-02	AREG,CLCA1,GDF15	 
+WT1	 	transcription regulator	 	-1.243	1.76E-02	AREG,MMP3,SERPINE1,SNAI2,WNT4	 
+ROR1	 	kinase	 	 	1.77E-02	SERPINE1,SNAI2	 
+deferasirox	 	chemical drug	 	 	1.77E-02	PLD4,SERPINB8	 
+NOSTRIN	-0.036	transcription regulator	 	 	1.77E-02	PGF,TFPI	 
+CCN1	-0.692	other	 	 	1.77E-02	MMP3,NOX1,SERPINE1	 
+ITGAV	-0.129	transmembrane receptor	 	 	1.88E-02	HAS2,SERPINE1	 
+ARHGAP31	 	other	 	 	1.88E-02	GDF15,MMP3	 
+TIMP1	-0.062	cytokine	 	 	1.88E-02	IGFBP3,MMP3	 
+TGFBR1	-0.313	kinase	 	 	1.88E-02	HAS2,SERPINE1,SNAI2	 
+EGF	-0.522	growth factor	Inhibited	-2.342	1.90E-02	AREG,GSTP1,HAS2,IGFBP3,MMP3,PGF,SERPINE1,SNAI2	 
+istradefylline	 	chemical drug	 	 	1.90E-02	PPP1R1B	 
+Corticosteroid-GCR	 	complex	 	 	1.90E-02	AGT	 
+ZNF451	-0.025	enzyme	 	 	1.90E-02	SERPINE1	 
+BCS1L	0.080	other	 	 	1.90E-02	ATF4	 
+HDGF	-0.178	growth factor	 	 	1.90E-02	SERPINE1	 
+defibrotide	 	biologic drug	 	 	1.90E-02	SERPINE1	 
+CSNK1E	-0.074	kinase	 	 	1.90E-02	SERPINE1	 
+riociguat	 	chemical drug	 	 	1.90E-02	SERPINE1	 
+EIF2B1	-0.024	translation regulator	 	 	1.90E-02	ATF4	 
+STK16	-0.026	kinase	 	 	1.90E-02	SERPINE1	 
+STRAP	-0.095	other	 	 	1.90E-02	SERPINE1	 
+BMP1	-0.023	peptidase	 	 	1.90E-02	IGFBP3	 
+Ank2	-0.998	other	 	 	1.90E-02	KCNJ11	 
+RNF8	0.058	enzyme	 	 	1.90E-02	RBP2	 
+Csn1s1	2.431	other	 	 	1.90E-02	CSN3	 
+glycine ethyl ester	 	chemical reagent	 	 	1.90E-02	NOX1	 
+STAT3 inhibitor XIII	 	chemical drug	 	 	1.90E-02	SERPINE1	 
+iCRT14	 	chemical reagent	 	 	1.90E-02	CCN4	 
+basic calcium phosphate crystal	 	chemical - endogenous mammalian	 	 	1.90E-02	MMP3	 
+mecamylamine	 	chemical drug	 	 	1.90E-02	KCNJ11	 
+filipin	 	chemical - endogenous non-mammalian	 	 	1.90E-02	SERPINE1	 
+trimethyloxamine	 	chemical - endogenous non-mammalian	 	 	1.90E-02	ATF4	 
+avasimibe	 	chemical drug	 	 	1.90E-02	CYP2C9	 
+isradipine	 	chemical drug	 	 	1.90E-02	CYP2C9	 
+MitoBloCK-6	 	chemical drug	 	 	1.90E-02	PSPH	 
+lead nitrate	 	chemical toxicant	 	 	1.90E-02	GSTP1	 
+5-phenylvaleric acid	 	chemical reagent	 	 	1.90E-02	ATF4	 
+latanoprost	 	chemical drug	 	 	1.90E-02	MMP3	 
+D,L-propargylglycine	 	chemical reagent	 	 	1.90E-02	AGT	 
+INS	 	other	 	-0.233	1.90E-02	AGT,AQP9,IGFBP3,TRIB3	 
+tert-butyl-hydroquinone	 	chemical reagent	 	 	1.94E-02	GPX2,GSTP1,SERPINE1	 
+CEBPB	-0.093	transcription regulator	Inhibited	-2.183	1.97E-02	AGT,CDH3,HAS2,IGFBP3,MMP3,SERPINE1,TRIB3	 
+PRDM16	 	transcription regulator	 	 	1.98E-02	AGT,SERPINE1	 
+PLAT	-0.363	peptidase	 	 	1.98E-02	MMP3,SERPINE1	 
+Ige	 	complex	 	0.447	1.99E-02	AREG,BCAT1,GDF15,NOX1,PIGZ,PIK3CD	 
+RASSF1	-0.193	other	 	 	2.00E-02	AREG,GDF15,IGFBP3	 
+RHOA	-0.113	enzyme	 	 	2.00E-02	AGT,GDF15,SNAI2	 
+TLR9	 	transmembrane receptor	 	0.447	2.03E-02	CPM,Csn1s1,CTH,IL19,SERPINE1	 
+indomethacin	 	chemical drug	 	 	2.03E-02	GDF15,GPX2,HAS2,Ppbp,SLC7A5	 
+SAMSN1	 	other	 	 	2.05E-02	ARID5A,IL15RA,U90926	 
+EIF4E	-0.234	translation regulator	 	 	2.07E-02	GPX2,IL15RA,MMP3,PGF	 
+SETD2	-0.075	enzyme	 	 	2.10E-02	ANGPTL6,SERPINE1	 
+AXL	-0.120	kinase	 	 	2.10E-02	MMP3,SNAI2	 
+SLC16A2	0.312	transporter	 	 	2.10E-02	DIO1,SLC7A5	 
+nitrofurantoin	 	chemical drug	 	0.152	2.19E-02	GPX2,GSTP1,HMGCS2,IGFBP3	 
+PLP1	0.479	other	 	 	2.21E-02	ATF4,MMP3	 
+EZR	-0.282	other	 	 	2.21E-02	ATF4,TRIB3	 
+ACVRL1	 	kinase	 	 	2.21E-02	GDF15,SERPINE1	 
+PF4	0.467	cytokine	 	 	2.21E-02	CPM,IL19	 
+Hdac	 	group	 	1.091	2.23E-02	AREG,IGFBP3,PGF,WNT4	 
+miR-125b-5p (and other miRNAs w/seed CCCUGAG)	 	mature microRNA	 	 	2.24E-02	GPR160,IGFBP3,PIGR	 
+GPD1	0.470	enzyme	 	 	2.24E-02	CLCA1,CYP4A22,SERPINE2	 
+poly rI:rC-RNA	 	biologic drug	 	-0.539	2.27E-02	ARID5A,ATF4,DIO1,GDF15,IL15RA,MMP3,PIGR,SNAI2	 
+SMAD2	-0.178	transcription regulator	 	 	2.30E-02	HAS2,SERPINE1,SNAI2	 
+STAT	 	group	 	 	2.33E-02	AGT,SOCS2	 
+KDM3A	0.108	transcription regulator	 	 	2.33E-02	GDF15,SERPINE1	 
+MSX2	 	transcription regulator	 	 	2.33E-02	FOXN1,IHH	 
+Yaf2	-0.283	transcription regulator	 	 	2.33E-02	CSN3,SOX11	 
+SLC25A13	-0.076	transporter	 	 	2.36E-02	CLCA1,CYP4A22,SERPINE2	 
+CD36	 	transmembrane receptor	 	 	2.36E-02	AREG,MMP3,SERPINE1	 
+IGF2	 	growth factor	 	 	2.37E-02	AREG,IGFBP3,MMP3,SERPINE1	 
+PTH	 	other	 	0.651	2.37E-02	AREG,IGFBP3,PPP1R1B,WNT4	 
+pioglitazone	 	chemical drug	 	0.152	2.41E-02	ATF4,HAS2,NOX1,SERPINE1	 
+NCOR1	0.139	transcription regulator	 	 	2.43E-02	DIO1,HAS2,IGFBP3	 
+SMAD3	-0.128	transcription regulator	Inhibited	-2.186	2.43E-02	AREG,ATF4,HAS2,SERPINE1,SNAI2	 
+MBTD1	0.034	other	 	 	2.45E-02	AQP9,GAL3ST2	 
+SUMO3	0.116	other	 	 	2.45E-02	AGT,CTH	 
+APR-246	 	chemical drug	 	 	2.45E-02	CDH3,SLC7A5	 
+thalidomide	 	chemical drug	 	 	2.45E-02	GDF15,SERPINE1	 
+IL17A	 	cytokine	 	-0.090	2.47E-02	AREG,IL19,MMP3,PGF,STEAP4	 
+fluticasone propionate	 	chemical drug	 	-1.000	2.50E-02	AQP9,GJB2,SERPINE1,TFPI	 
+13(S)-hydroxyoctadecadienoic acid	 	chemical - endogenous mammalian	 	 	2.53E-02	SERPINE1	 
+Rsk	 	group	 	 	2.53E-02	ATF4	 
+RAR ligand-RARα-Retinoic acid-RXRα	 	complex	 	 	2.53E-02	SLCO1A2	 
+TR-RXR	 	complex	 	 	2.53E-02	DIO1	 
+GPR65	 	G-protein coupled receptor	 	 	2.53E-02	MMP3	 
+ATOH7	 	other	 	 	2.53E-02	SOX11	 
+ENTPD2	0.235	enzyme	 	 	2.53E-02	SERPINE1	 
+GJB6	 	transporter	 	 	2.53E-02	GJB2	 
+WNT9B	 	other	 	 	2.53E-02	WNT4	 
+VLDL	 	complex	 	 	2.53E-02	SERPINE1	 
+TAOK2	0.209	kinase	 	 	2.53E-02	GSTP1	 
+PTPRA	0.097	phosphatase	 	 	2.53E-02	MMP3	 
+miR-379-5p (and other miRNAs w/seed GGUAGAC)	 	mature microRNA	 	 	2.53E-02	IHH	 
+HAS3	-0.375	enzyme	 	 	2.53E-02	HAS2	 
+TCF20	0.013	transcription regulator	 	 	2.53E-02	MMP3	 
+P2RX4	0.614	ion channel	 	 	2.53E-02	MMP3	 
+GIPC1	-0.006	other	 	 	2.53E-02	SERPINE1	 
+GGT1	 	enzyme	 	 	2.53E-02	CLCA1	 
+COL1A2	 	other	 	 	2.53E-02	SERPINE1	 
+Mt3	-0.336	other	 	 	2.53E-02	GSTP1	 
+SERPINH1	-0.120	other	 	 	2.53E-02	SERPINE1	 
+WTAP	-0.048	other	 	 	2.53E-02	AREG	 
+cyclooxygenase inhibitor	 	chemical drug	 	 	2.53E-02	GDF15	 
+phenformin	 	chemical drug	 	 	2.53E-02	ATF4	 
+trigonelline	 	chemical - endogenous mammalian	 	 	2.53E-02	AGT	 
+iodixanol	 	chemical drug	 	 	2.53E-02	SERPINE1	 
+pyocyanin	 	chemical reagent	 	 	2.53E-02	NOX1	 
+cyclosporin A	 	biologic drug	 	-0.215	2.56E-02	AGT,BCAT1,CYP2C9,GPX2,IL19,MMP3,SERPINE1	 
+pregnenolone carbonitrile	 	chemical drug	 	 	2.57E-02	Ces2a,HMGCS2	 
+TFAP4	-0.037	transcription regulator	 	 	2.57E-02	GDF15,LGR5	 
+miR-182-5p (and other miRNAs w/seed UUGGCAA)	 	mature microRNA	 	 	2.57E-02	PGF,SERPINE2	 
+NEDD9	0.152	other	 	 	2.57E-02	GDF15,SERPINE1	 
+paricalcitol	 	chemical drug	 	 	2.57E-02	AGT,TFPI	 
+bromocriptine	 	chemical drug	 	 	2.57E-02	Csn1s1,IHH	 
+cephaloridine	 	chemical drug	 	 	2.62E-02	CYP2C9,GSTP1,TRIB3	 
+YAP1	0.044	transcription regulator	 	 	2.64E-02	AREG,HMGCS2,SERPINE1,SNAI2	 
+1,25-dihydroxyvitamin D	 	chemical drug	 	 	2.69E-02	MAPK13,MMP3	 
+PXR ligand-PXR-Retinoic acid-RXRα	 	complex	 	 	2.69E-02	CYP2C9,SLCO1A2	 
+N-cor	 	group	 	 	2.76E-02	GSTP1,IGFBP3,SNAI2	 
+L-triiodothyronine	 	chemical - endogenous mammalian	 	0.904	2.81E-02	AGT,CTH,DIO1,GDF15,IGFBP3,SERPINE1,SLAMF9	 
+POSTN	 	other	 	 	2.82E-02	ATF4,CLCA1	 
+benzyl isothiocyanate	 	chemical - endogenous non-mammalian	 	 	2.82E-02	GSTP1,SERPINE1	 
+4-hydroxytamoxifen	 	chemical drug	 	 	2.89E-02	AREG,IGFBP3,KRT13,SNAI2	 
+MYD88	0.128	other	 	-1.342	2.93E-02	CCN4,GDF15,NOX1,SERPINE1,U90926	 
+Laminin (complex)	 	complex	 	 	2.95E-02	SERPINE1,SNAI2	 
+DMP1	 	other	 	 	2.95E-02	IHH,SLC6A9	 
+SUMO2	-0.016	enzyme	 	 	2.95E-02	AGT,CTH	 
+CSF1R	 	kinase	 	 	2.95E-02	GAL3ST2,LGR5	 
+glutamine	 	chemical - endogenous mammalian	 	 	2.97E-02	ATF4,BCAT1,PYCR1	 
+cisplatin	 	chemical drug	 	0.120	3.00E-02	ATF4,CLCA1,GDF15,GPX2,GSTP1,IGFBP3,NOX1,SERPINE1,TFPI,WNT4	 
+PTEN	0.108	phosphatase	 	-0.853	3.02E-02	CALCRL,Csn1s1,GPR160,IGFBP3,LGR5,MMP3,OTUB2,SERPINE1,SNAI2	 
+MET	0.199	kinase	 	 	3.12E-02	AREG,ARID5A,IL15RA	 
+RNA polymerase II	 	complex	 	 	3.14E-02	ARID5A,DIO1,GDF15,HAS2,IGFBP3	 
+(+)-fluprostenol	 	chemical drug	 	 	3.15E-02	NOX1	 
+chondroitin sulfate	 	chemical - endogenous mammalian	 	 	3.15E-02	MMP3	 
+sulfadimethoxine	 	chemical toxicant	 	 	3.15E-02	GSTP1	 
+menthol	 	chemical drug	 	 	3.15E-02	CYP2C9	 
+CpG ODN 1555	 	chemical reagent	 	 	3.15E-02	IL15RA	 
+FOXK2	-0.053	transcription regulator	 	 	3.15E-02	SERPINE1	 
+G6PC3	-0.045	phosphatase	 	 	3.15E-02	ATF4	 
+SLC39A8	0.688	transporter	 	 	3.15E-02	MMP3	 
+CREB3L4	-0.287	transcription regulator	 	 	3.15E-02	AQP9	 
+SLC7A5	-1.002	transporter	 	 	3.15E-02	ATF4	 
+IL31RA	 	transmembrane receptor	 	 	3.15E-02	SOCS2	 
+FZD7	-0.055	G-protein coupled receptor	 	 	3.15E-02	SNAI2	 
+NCK2	0.336	kinase	 	 	3.15E-02	ATF4	 
+MYBBP1A	-0.229	transcription regulator	 	 	3.15E-02	MMP3	 
+EAF2	 	transcription regulator	 	 	3.15E-02	WNT4	 
+miR-374b-5p (and other miRNAs w/seed UAUAAUA)	 	mature microRNA	 	 	3.15E-02	IHH	 
+SFRP2	 	transmembrane receptor	 	 	3.15E-02	SNAI2	 
+RSC1A1	-0.050	other	 	 	3.15E-02	SLC28A3	 
+CDH4	 	other	 	 	3.15E-02	CDH3	 
+BRCA2	-0.226	transcription regulator	 	 	3.15E-02	SERPINE1	 
+PPP2R2A	-0.212	phosphatase	 	 	3.15E-02	SERPINE2	 
+GJB1	0.665	transporter	 	 	3.15E-02	GJB2	 
+beta-elemene	 	chemical - endogenous non-mammalian	 	 	3.15E-02	SNAI2	 
+PSMB5	-0.024	peptidase	 	 	3.15E-02	GSTP1	 
+Mcpt1	-0.101	peptidase	 	 	3.15E-02	AGT	 
+PPP2R5B	0.144	phosphatase	 	 	3.15E-02	SERPINE2	 
+hydroxycitric acid	 	chemical - endogenous non-mammalian	 	 	3.15E-02	MMP3	 
+cimetidine	 	chemical drug	 	 	3.15E-02	GDF15	 
+ISRIB	 	chemical reagent	 	 	3.15E-02	ATF4	 
+potassium perchlorate	 	chemical reagent	 	 	3.15E-02	DIO1	 
+SOX4	-0.004	transcription regulator	 	-1.980	3.20E-02	CHAC1,P2RX3,SERPINE2,SLC7A3	 
+U73122	 	chemical reagent	 	 	3.21E-02	AGT,ATF4	 
+Collagen(s)	 	complex	 	 	3.35E-02	ATF4,C4bp	 
+HNF4A	0.168	transcription regulator	 	1.586	3.41E-02	AGT,ALDOB,AQP9,ATF4,CYP2C9,GDF15,GJB2,GPR160,GPX2,GRHL1,KCNJ11,LGR5,MPZL2,PPP1R14D,RBP2,SCAND1,SERPINB8,SERPINE1,SHFL,SNAI2,WNT4	 
+PGR	 	ligand-dependent nuclear receptor	 	0.064	3.48E-02	AREG,GPR160,SERPINB8,SLC7A5,WNT4	 
+PROC	0.389	peptidase	 	 	3.48E-02	AGT,SERPINE1	 
+LTA	 	cytokine	 	 	3.48E-02	CHST4,HAS2	 
+PI3K (family)	 	group	 	 	3.50E-02	MMP3,SERPINE1,SNAI2	 
+losartan potassium	 	chemical drug	 	 	3.50E-02	AGT,ATF4,SERPINE1	 
+TGFB2	-0.151	growth factor	 	 	3.58E-02	HAS2,SERPINE1,SNAI2	 
+KIT	 	transmembrane receptor	 	 	3.58E-02	IL15RA,SNAI2,SOCS2	 
+GNA15	 	enzyme	 	 	3.58E-02	CTH,NOX1,TRIB3	 
+MAP2K1	-0.292	kinase	 	 	3.59E-02	AREG,MMP3,SERPINE2,SNAI2	 
+FGF21	 	growth factor	 	 	3.62E-02	HMGCS2,SERPINE1	 
+OLR1	-0.026	transmembrane receptor	 	 	3.62E-02	HAS2,MMP3	 
+Rxr	 	group	 	 	3.66E-02	CYP2C9,DIO1,RBP2	 
+RET	 	kinase	 	 	3.66E-02	ATF4,MMP3,REEP6	 
+ERBB3	0.329	kinase	 	 	3.74E-02	HAS2,MMP3,SERPINE1	 
+PPRC1	-0.083	transcription regulator	 	 	3.77E-02	ATF4,GDF15	 
+MED13	-0.058	transcription regulator	 	 	3.77E-02	ACSM3,TFPI	 
+HNRNPK	-0.081	transcription regulator	 	 	3.77E-02	AGT,MMP3	 
+valsartan	 	chemical drug	 	 	3.77E-02	NOX1,SERPINE1	 
+20-hydroxyeicosatetraenoic acid	 	chemical - endogenous mammalian	 	 	3.77E-02	CYP2C9	 
+kynurenine	 	chemical - endogenous mammalian	 	 	3.77E-02	MMP3	 
+benfluorex	 	chemical drug	 	 	3.77E-02	HMGCS2	 
+hydroxyethylnorfenfluramine	 	chemical - endogenous mammalian	 	 	3.77E-02	HMGCS2	 
+obatoclax	 	chemical drug	 	 	3.77E-02	ATF4	 
+glycitein	 	chemical drug	 	 	3.77E-02	MMP3	 
+ATP6AP2	0.051	transporter	 	 	3.77E-02	AGT	 
+ZMIZ1	-0.150	other	 	 	3.77E-02	SERPINE1	 
+EIF2A	-0.051	translation regulator	 	 	3.77E-02	ATF4	 
+ZNRF3	0.119	enzyme	 	 	3.77E-02	WNT4	 
+FGF13	 	growth factor	 	 	3.77E-02	MMP3	 
+UBP1	-0.092	transcription regulator	 	 	3.77E-02	GRHL1	 
+HAS1	 	enzyme	 	 	3.77E-02	HAS2	 
+miR-508-3p (miRNAs w/seed GAUUGUA)	 	mature microRNA	 	 	3.77E-02	SERPINE1	 
+GPAM	-0.024	enzyme	 	 	3.77E-02	HMGCS2	 
+ERCC1	-0.233	enzyme	 	 	3.77E-02	DIO1	 
+TAF10	0.022	transcription regulator	 	 	3.77E-02	DIO1	 
+RNF111	-0.117	enzyme	 	 	3.77E-02	SERPINE1	 
+TADA3	-0.081	transcription regulator	 	 	3.77E-02	RBP2	 
+TRIM33	-0.092	transcription regulator	 	 	3.77E-02	SERPINE1	 
+C8orf44-SGK3/SGK3	 	kinase	 	 	3.77E-02	ATF4	 
+CMA1	 	peptidase	 	 	3.77E-02	AGT	 
+PPID	-0.182	enzyme	 	 	3.77E-02	SNAI2	 
+MAP3K4	0.020	kinase	 	 	3.77E-02	SNAI2	 
+Casp12	0.890	peptidase	 	 	3.77E-02	MMP3	 
+MTUS1	0.516	other	 	 	3.77E-02	SNAI2	 
+ERCC3	-0.060	enzyme	 	 	3.77E-02	DIO1	 
+coumarin	 	chemical drug	 	 	3.77E-02	GSTP1	 
+pyridoxamine	 	chemical - endogenous mammalian	 	 	3.77E-02	SERPINE1	 
+eprosartan	 	chemical drug	 	 	3.77E-02	SERPINE1	 
+(S)-mevalonic acid	 	chemical - endogenous mammalian	 	 	3.77E-02	NOX1	 
+12-hydroxyeicosatetraenoic acid	 	chemical - endogenous mammalian	 	 	3.77E-02	NOX1	 
+phenylamil	 	chemical reagent	 	 	3.77E-02	TRIB3	 
+IL5	 	cytokine	Inhibited	-2.219	3.81E-02	AREG,ATF4,PYCR1,SLC7A5,SOCS2	 
+DUSP1	0.148	phosphatase	 	 	3.82E-02	GDF15,GJB2,SERPINE1	 
+paraquat	 	chemical toxicant	 	 	3.91E-02	AGT,GSTP1,MMP3	 
+IDH1	-0.168	enzyme	 	 	3.91E-02	ATF4,BCAT1	 
+EDN1	0.119	cytokine	 	-1.945	3.95E-02	AREG,CALCRL,MMP3,SERPINE1	 
+KMT2D	0.155	transcription regulator	 	0.283	4.01E-02	GJB2,GRHL1,REEP6,SYDE2	 
+AKT1	0.028	kinase	 	-1.067	4.05E-02	Csn1s1,GDF15,PPP1R1B,SERPINE1,SNAI2	 
+resveratrol	 	chemical drug	 	-0.555	4.05E-02	GDF15,IGFBP3,MMP3,NOX1,SERPINE1	 
+SQSTM1	-0.095	transcription regulator	 	 	4.06E-02	ARID5A,IL15RA	 
+CREBBP	0.116	transcription regulator	 	 	4.09E-02	AGT,ARID5A,HAS2,HMGCS2,SERPINE2,TMPRSS4	 
+PI3K (complex)	 	complex	 	-0.882	4.10E-02	ATF4,GSTP1,NOX1,PPP1R1B,SERPINE1	 
+MECP2	0.136	transcription regulator	 	 	4.16E-02	GSTP1,IGFBP3,UNC5C	 
+deoxycholate	 	chemical - endogenous mammalian	 	 	4.21E-02	CYP2C9,GJB2	 
+8-chlorophenylthio-adenosine 3',5'-cyclic monophosphate	 	chemical - kinase inhibitor	 	 	4.21E-02	AREG,CYP2C9	 
+H2AB3 (includes others)	 	other	 	 	4.21E-02	CHAC1,MELTF	 
+PRMT1	-0.044	enzyme	 	 	4.21E-02	SERPINE1,SNAI2	 
+candesartan	 	chemical drug	 	 	4.21E-02	AGT,SERPINE1	 
+methimazole	 	chemical drug	 	 	4.21E-02	DIO1,IGFBP3	 
+beta-naphthoflavone	 	chemical toxicant	 	 	4.21E-02	GSTP1,SOCS2	 
+GSK3B	0.057	kinase	 	 	4.25E-02	IL19,SERPINE1,SNAI2	 
+forskolin	 	chemical toxicant	 	-1.119	4.30E-02	AREG,CYP2C9,GSTP1,HAS2,IGFBP3,MMP3,PIK3CD,SERPINE1,WNT4	 
+celecoxib	 	chemical drug	 	 	4.34E-02	ATF4,GDF15,SERPINE1	 
+CCN5	 	growth factor	 	 	4.36E-02	SERPINE1,SNAI2	 
+doramapimod	 	chemical - kinase inhibitor	 	 	4.38E-02	HAS2	 
+ST6GALNAC1	 	enzyme	 	 	4.38E-02	SNAI2	 
+SNED1	0.184	other	 	 	4.38E-02	IGFBP3	 
+APC (complex)	 	complex	 	 	4.38E-02	TRIB3	 
+ABL2	0.143	kinase	 	 	4.38E-02	MMP3	 
+BAG6	0.112	enzyme	 	 	4.38E-02	SERPINE1	 
+AGR2	 	other	 	 	4.38E-02	AREG	 
+WNK1	0.033	kinase	 	 	4.38E-02	SERPINE1	 
+mir-374	 	microRNA	 	 	4.38E-02	IHH	 
+UGDH	-0.283	enzyme	 	 	4.38E-02	HAS2	 
+TSC22D1	-0.261	transcription regulator	 	 	4.38E-02	SERPINE1	 
+DLC1	 	other	 	 	4.38E-02	SERPINE1	 
+LGALS7/LGALS7B	 	other	 	 	4.38E-02	SERPINE1	 
+SPTBN4	-0.549	other	 	 	4.38E-02	KCNJ11	 
+FERMT1	0.182	other	 	 	4.38E-02	WNT4	 
+IGFBP4	0.111	other	 	 	4.38E-02	IGFBP3	 
+sulfinosine	 	chemical reagent	 	 	4.38E-02	GSTP1	 
+CUL7	0.173	other	 	 	4.38E-02	SNAI2	 
+MAD2L2	-0.089	enzyme	 	 	4.38E-02	SNAI2	 
+CHGA	 	other	 	 	4.38E-02	SERPINE2	 
+ERBIN	0.039	other	 	 	4.38E-02	SERPINE1	 
+NKX3-2	 	transcription regulator	 	 	4.38E-02	IHH	 
+PGK1	-0.242	kinase	 	 	4.38E-02	MMP3	 
+SNW1	-0.066	transcription regulator	 	 	4.38E-02	SERPINE1	 
+H4-16	-0.232	other	 	 	4.38E-02	GSTP1	 
+Eda	 	other	 	 	4.38E-02	AREG	 
+Elf5	 	transcription regulator	 	 	4.38E-02	Csn1s1	 
+AP20187	 	chemical reagent	 	 	4.38E-02	ATF4	 
+AR-A014418	 	chemical reagent	 	 	4.38E-02	GDF15	 
+6-methylsulfinylhexyl isothiocyanate	 	chemical reagent	 	 	4.38E-02	GSTP1	 
+butylidenephthalide	 	chemical reagent	 	 	4.38E-02	SNAI2	 
+cyclosporin	 	biologic drug	 	 	4.38E-02	IL19	 
+PARP1	0.023	enzyme	 	 	4.42E-02	GDF15,HAS2,SOCS2	 
+GNAQ	0.448	enzyme	 	 	4.42E-02	AREG,HAS2,SERPINE1	 
+SFRP1	 	transmembrane receptor	 	 	4.51E-02	MMP3,SERPINE1	 
+NOG	 	growth factor	 	 	4.51E-02	HAS2,MMP3	 
+PTPRJ	0.426	phosphatase	 	 	4.51E-02	ARID5A,U90926	 
+FOSL2	-0.036	transcription regulator	 	 	4.51E-02	MMP3,S100a7a	 
+PTPN1	0.206	phosphatase	 	 	4.51E-02	ARID5A,NOX1	 
+salirasib	 	chemical drug	 	 	4.51E-02	ATF4,SERPINE1	 
+RUNX2	-0.177	transcription regulator	 	 	4.51E-02	IHH,SERPINE1,SNAI2	 
+isobutylmethylxanthine	 	chemical toxicant	 	0.000	4.51E-02	AGT,AREG,MMP3,SERPINE1	 
+triamcinolone acetonide	 	chemical drug	 	1.067	4.51E-02	CTH,IGFBP3,PSPH,SOCS2	 
+FN1	-0.244	enzyme	 	-1.980	4.58E-02	BCAT1,MMP3,SERPINE1,SNAI2	 
+C5	0.674	cytokine	 	 	4.60E-02	GDF15,MMP3,SERPINE1	 
+SHC1	-0.059	other	 	 	4.66E-02	GSTP1,SERPINE1	 
+GHR	-0.176	transmembrane receptor	 	 	4.66E-02	IGFBP3,SOCS2	 
+MAP3K1	0.071	kinase	 	 	4.66E-02	MMP3,SERPINE1	 
+IL4R	0.143	transmembrane receptor	 	 	4.66E-02	CLCA1,Sprr2a1/Sprr2a2	 
+SIRT1	0.013	transcription regulator	 	-1.633	4.71E-02	AGT,CLCA1,MMP3,SERPINE1,TFPI,TMPRSS4	 
+TSHZ3	 	transcription regulator	 	 	4.82E-02	IGFBP3,PODN	 
+BCL3	0.052	transcription regulator	 	 	4.82E-02	AGT,IL19	 
+carboplatin	 	chemical drug	 	 	4.82E-02	GPX2,HAS2	 
+IL22	 	cytokine	 	 	4.88E-02	CLCA1,IL19,MMP3	 
+KLF11	0.160	transcription regulator	 	 	4.97E-02	AGT,MMP3,SERPINE1	 
+Cyp4a14	 	enzyme	 	 	4.99E-02	CYP4A22	 
+N-Cadherin	 	group	 	 	4.99E-02	SOX11	 
+ZNF384	0.109	transcription regulator	 	 	4.99E-02	MMP3	 
+SLC39A14	0.153	transporter	 	 	4.99E-02	ATF4	 
+PON2	-0.255	enzyme	 	 	4.99E-02	TFPI	 
+LGI1	 	other	 	 	4.99E-02	MMP3	 
+ABCC1	-0.242	transporter	 	 	4.99E-02	NOX1	 
+PLCD1	-0.320	enzyme	 	 	4.99E-02	SNAI2	 
+ERCC4	0.332	enzyme	 	 	4.99E-02	DIO1	 
+RLN1	 	other	 	 	4.99E-02	HAS2	 
+THRSP	 	other	 	 	4.99E-02	DIO1	 
+CYP4A11	 	enzyme	 	 	4.99E-02	AGT	 
+EFEMP1	-0.393	enzyme	 	 	4.99E-02	SERPINE1	 
+USP2	 	peptidase	 	 	4.99E-02	SERPINE1	 
+LPA	 	other	 	 	4.99E-02	SERPINE1	 
+OCLN	0.105	other	 	 	4.99E-02	MMP3	 
+MAD2L1	-0.050	other	 	 	4.99E-02	LGR5	 
+FBXO2	-0.441	enzyme	 	 	4.99E-02	GJB2	 
+TBL1X	0.061	transcription regulator	 	 	4.99E-02	DIO1	 
+PROKR1	0.073	G-protein coupled receptor	 	 	4.99E-02	SNAI2	 
+filgotinib	 	chemical drug	 	 	4.99E-02	MMP3	 
+EDA	 	cytokine	 	 	4.99E-02	AREG	 
+TNFRSF10B	 	transmembrane receptor	 	 	4.99E-02	MMP3	 
+TBL1XR1	-0.158	transcription regulator	 	 	4.99E-02	DIO1	 
+MALAT1	 	other	 	 	4.99E-02	SNAI2	 
+butylhydroxybutylnitrosamine	 	chemical toxicant	 	 	4.99E-02	AREG	 
+itraconazole	 	chemical drug	 	 	4.99E-02	LGR5	 
+NCX-4040	 	chemical drug	 	 	4.99E-02	GSTP1	 
+GW 5074	 	chemical - kinase inhibitor	 	 	4.99E-02	SERPINE1	 
+methoxychlor	 	chemical toxicant	 	 	4.99E-02	DIO1	 
+SC-58125	 	chemical drug	 	 	4.99E-02	GDF15	 
+latrunculin A	 	chemical toxicant	 	 	4.99E-02	HAS2	 
+hypochlorous acid	 	chemical drug	 	 	4.99E-02	SNAI2	 
+epoxyeicosatrienoic acid analog B	 	chemical reagent	 	 	4.99E-02	NOX1	 
+epoxyeicosatrienoic acid analog A	 	chemical reagent	 	 	4.99E-02	NOX1	 
+uridine	 	chemical - endogenous mammalian	 	 	4.99E-02	ALDOB	 
+N,N-dimethylarginine	 	chemical - endogenous mammalian	 	 	4.99E-02	SERPINE1	 
+palmitic acid	 	chemical - endogenous mammalian	 	-1.961	5.85E-02	ATF4,GDF15,SERPINE1,TRIB3	 
+SP1	0.046	transcription regulator	Inhibited	-2.172	7.36E-02	CTH,GDF15,HAS2,IGFBP3,PADI4,SERPINE1,SERPINE2	 
+NOTCH1	0.362	transcription regulator	 	1.886	8.81E-02	IGFBP3,MMP3,SERPINE1,WNT4	 
+Akt	 	group	 	-1.985	1.13E-01	ATF4,PPP1R1B,SERPINE1,SNAI2	 
+methylprednisolone	 	chemical drug	 	-1.910	1.28E-01	ALDOB,CDH3,DIO1,GSTP1,PIGR,SERPINE1	 
+trichostatin A	 	chemical drug	 	1.824	2.11E-01	AGT,BCAT1,DDR2,HMGCS2,IGFBP3,MMP3,PIK3CD,UNC5C	 
+NUPR1	-0.626	transcription regulator	Inhibited	-2.236	2.21E-01	AREG,GDF15,LHFPL2,SERPINE1,TRIB3	 
+IL2	 	cytokine	 	-1.961	3.80E-01	AREG,CYP2C9,GDF15,SOCS2,TRIB3	 
